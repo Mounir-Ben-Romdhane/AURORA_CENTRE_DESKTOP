@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="500.0" styleClass="parent" stylesheets="@styleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.OTPEmaillController">
+   <children>
+      <Pane prefHeight="500.0" prefWidth="500.0" styleClass="white-pane">
+         <children>
+            <Label alignment="BOTTOM_RIGHT" contentDisplay="CENTER" layoutX="80.0" layoutY="107.0" prefHeight="27.0" prefWidth="341.0" text="Your OTP will be sent to your Email Id" textAlignment="CENTER" textFill="#f78c7b">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <HBox layoutX="150.0" layoutY="179.0" prefHeight="45.0" prefWidth="200.0" styleClass="tf-box" stylesheets="@styleSheet.css">
+               <children>
+                  <TextField fx:id="tfOTP" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Enter your OTP" styleClass="tf-ping" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="151.0" layoutY="262.0" prefHeight="45.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="btnSubmitOTP" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btnSubmitOTP" prefHeight="35.0" prefWidth="120.0" styleClass="pink-btn" text="Submit">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <TextField fx:id="hide" layoutX="21.0" layoutY="379.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

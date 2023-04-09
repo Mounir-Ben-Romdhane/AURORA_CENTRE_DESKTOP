@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="680.0" prefWidth="980.0" styleClass="parent" stylesheets="@styleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.FXMLController">
+   <children>
+      <Pane layoutY="115.0" prefHeight="420.0" prefWidth="980.0" styleClass="pane" stylesheets="@styleSheet.css">
+         <children>
+            <Label layoutX="73.0" layoutY="154.0" text="Don't Have An Account ?" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="73.0" layoutY="193.0" minHeight="-Infinity" minWidth="-Infinity" prefWidth="269.0" text="Lorem ipsim is a dummy text used as a placeholder in websites. " textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER_RIGHT" layoutX="73.0" layoutY="256.0" prefHeight="45.0">
+               <children>
+                  <Button fx:id="btnSignUp" mnemonicParsing="false" onAction="#openSignUp" prefHeight="35.0" prefWidth="120.0" styleClass="trans-btn-white-border" text="Sign Up" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnForgetPassSignUp" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#btnForgetPassAction" styleClass="white-btn" text="Forget Password ?" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <Label layoutX="638.0" layoutY="154.0" text="Have An Account ?" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="638.0" layoutY="193.0" minHeight="-Infinity" minWidth="-Infinity" prefWidth="269.0" text="Lorem ipsim is a dummy text used as a placeholder in websites. " textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER_RIGHT" layoutX="638.0" layoutY="256.0" prefHeight="45.0">
+               <children>
+                  <Button fx:id="btnSignIn" mnemonicParsing="false" onAction="#openSignIn" prefHeight="35.0" prefWidth="120.0" styleClass="trans-btn-white-border" text="Sign In" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnForgetPassSignIn" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#btnForgetPassActionSgnIn" styleClass="white-btn" text="Forget Password ?" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <VBox fx:id="vbox" layoutX="22.0" layoutY="50.0" prefHeight="550.0" prefWidth="480.0" styleClass="white-pane" />
+   </children>
+</AnchorPane>
