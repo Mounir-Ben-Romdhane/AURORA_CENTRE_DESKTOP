@@ -238,18 +238,27 @@ public class SignUpController implements Initializable {
     private void signUpAction(ActionEvent event) throws Exception {
         UserService ps = new UserService();
         if( (bName && bEmail) && ( (bAdd && bTel) && (bPass && bConfPass) ) ){
-        ps.SignUpUser(new User(tfFullName.getText(),tfEmail.getText(),tfNumTel.getText(),tfFullAddress.getText(),tfPassword.getText()));
+            if(ps.SignUpUser(new User(tfFullName.getText(),tfEmail.getText(),tfNumTel.getText(),tfFullAddress.getText(),tfPassword.getText()))){
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("Main.fxml"));
         
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Main.fxml"));
+                Parent root = loader.load();
+                tfFullName.getScene().setRoot(root);
+
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setContentText("Account created succesfully!");
+                alert.setHeaderText(null);
+                alert.setTitle("Succes");
+                alert.show();
+            }else{
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setContentText("Email exist in the database!!");
+                alert.setHeaderText(null);
+                alert.setTitle("ERROR");
+                alert.show();
+            }
         
-        Parent root = loader.load();
-        tfFullName.getScene().setRoot(root);
         
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setContentText("Account created succesfully!");
-        alert.setHeaderText(null);
-        alert.setTitle("Succes");
-        alert.show();
+        
         }else{
             
             Alert alert = new Alert(Alert.AlertType.ERROR);
