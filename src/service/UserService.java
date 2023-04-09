@@ -60,23 +60,42 @@ public class UserService implements IService<User> {
     
     
     
-    public void SignUpUser(User p)  throws Exception{
+    public Boolean SignUpUser(User p)  throws Exception{
+        PreparedStatement preparedStatement1 = null;
+        ResultSet resultSet1 = null;
+        boolean res1 = false;
         String requete = "insert into user(username,email,num_tel,password,full_address)"
                 + " values (?,?,?,?,?)";
         try {
             
-            String hashedPassword = BCrypt.hashpw(p.getPassword(), BCrypt.gensalt());
-            PreparedStatement pst=conn.prepareStatement(requete);
-            pst.setString(1, p.getUserName());
-            pst.setString(2, p.getEmail());
-            pst.setString(3, p.getNumTel());
-            pst.setString(4, hashedPassword);
-            pst.setString(5, p.getFullAddress());
-            pst.executeUpdate();
+            preparedStatement1 = conn.prepareStatement("SELECT email FROM user WHERE email = ?");
+            preparedStatement1.setString(1, p.getEmail());
+            resultSet1 = preparedStatement1.executeQuery();
+            
+            if(!resultSet1.isBeforeFirst()){
+                String hashedPassword = BCrypt.hashpw(p.getPassword(), BCrypt.gensalt());
+                    PreparedStatement pst=conn.prepareStatement(requete);
+                    pst.setString(1, p.getUserName());
+                    pst.setString(2, p.getEmail());
+                    pst.setString(3, p.getNumTel());
+                    pst.setString(4, hashedPassword);
+                    pst.setString(5, p.getFullAddress());
+                    pst.executeUpdate();
+                    res1=true;
+            }else{
+                while (resultSet1.next()) {
+                    
+                    System.out.println("Email exist in the database!!");
+                
+                     res1=false;
+                }
+            }
+            
  
         } catch (SQLException ex) {
             Logger.getLogger(UserService.class.getName()).log(Level.SEVERE, null, ex);
         }
+        return res1;
              
     }
     
