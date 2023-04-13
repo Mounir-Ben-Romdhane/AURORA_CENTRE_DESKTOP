@@ -9,10 +9,19 @@
     -fx-background-color:transparent;
     -fx-background-radius:5px;
     -fx-border-color:white;
-    -fx-border-radius:5px;
+    -fx-border-radius:10px;
     -fx-border-width:2px;
     -fx-text-fill:white;
 }
+
+.trans-btn-white-border:hover{
+    -fx-background-color:#fca5a5;
+}
+
+.trans-btn-white-border:pressed{
+    -fx-background-color:#F78C7B;
+}
+
 .white-pane{
     -fx-background-color:#FFFFFF;
 }
@@ -30,20 +39,77 @@
     -fx-background-color:transparent;
     -fx-text-fill:#F78C7B;
 }
+
+.pink1-btn{
+    -fx-background-color:#F78C7B;
+    -fx-background-radius:10px;
+    -fx-text-fill:#FFFFFF;
+}
+
+.pink1-btn:hover{
+    -fx-background-color:#fca5a5;
+}
+.pink1-btn:pressed{
+    -fx-background-color:#F78C7B;
+}
+
 .pink-btn{
     -fx-background-color:#F78C7B;
-    -fx-background-radius:5px;
+    -fx-background-radius:10px;
     -fx-text-fill:#FFFFFF;
+}
+
+.pink-btn:hover{
+    -fx-background-color:#fca5a5;
+}
+.pink-btn:pressed{
+    -fx-background-color:#d46d6d;
+}
+.pink-btn:focused{
+    -fx-background-color:#d46d6d;
+    -fx-border-color: #fca5a5;
+    -fx-border-width:1px 1px 1px 5px;
+    -fx-border-radius:10px;
 }
 
 .wh-btn{
     -fx-background-color:white;
-    -fx-background-radius:5px;
+    -fx-background-radius:10px;
     -fx-text-fill:#F78C7B;
 }
 
 .white-btn{
     -fx-background-color:transparent;
-    -fx-background-radius:5px;
+    -fx-background-radius:10px;
     -fx-text-fill:white;
+}
+
+.table-view .column-header,
+.table-view .column-header-background .filter {
+    -fx-cell-size: 25;
+    -fx-background-color:#fca5a5;
+    -fx-alignment:center;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill:white;
+    -fx-font-weight:bold;
+    -fx-alignment:CENTER_LEFT;
+    -fx-alignment:center;
+}
+
+.table-view .cell {
+    -fx-cell-size:30;
+    -fx-alignment:center-left;
+    -fx-text-fill:#000000;
+    -fx-alignment:center;
+    
+}
+
+.table-row-cell:selected {
+    -fx-background-color: rgb(127 , 172 , 243);
+}
+
+.table-row-cell:selected .text{
+    -fx-fill : white;
 }

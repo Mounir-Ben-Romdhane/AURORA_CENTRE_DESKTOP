@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox id="VBox" fx:id="VBoxAddUser" prefHeight="538.0" prefWidth="1203.0" styleClass="white-pane" stylesheets="@styleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.AddUserController">
+   <children>
+      <Label fx:id="hello" alignment="CENTER" contentDisplay="CENTER" layoutX="362.0" prefHeight="58.0" prefWidth="1203.0" text="Add User" textFill="#d46d6d">
+         <font>
+            <Font size="43.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </Label>
+      <Pane prefHeight="395.0" prefWidth="877.0" styleClass="white-pane">
+         <children>
+            <HBox layoutX="43.0" layoutY="33.0" prefHeight="50.0" prefWidth="500.0" styleClass="tf-box">
+               <children>
+                  <TextField fx:id="tfFullNameUser" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="FullName User" styleClass="tf" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="8.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../image/fullName.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Label fx:id="lbFullName" layoutX="64.0" layoutY="93.0" opacity="0.7" prefHeight="30.0" prefWidth="437.0">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <HBox layoutX="43.0" layoutY="160.0" prefHeight="50.0" prefWidth="500.0" styleClass="tf-box">
+               <children>
+                  <TextField fx:id="tfEmailUser" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Email User" styleClass="tf" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="8.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../image/téléchargement.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Label fx:id="lbEmailSignUp" layoutX="61.0" layoutY="224.0" opacity="0.7" prefHeight="30.0" prefWidth="460.0">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <HBox layoutX="43.0" layoutY="282.0" prefHeight="50.0" prefWidth="500.0" styleClass="tf-box">
+               <children>
+                  <TextField fx:id="tfFullAddressUser" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="FullAddress User" styleClass="tf" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="8.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../image/address.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Label fx:id="lbFullAddress" layoutX="61.0" layoutY="341.0" opacity="0.7" prefHeight="30.0" prefWidth="473.0">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <HBox layoutX="643.0" layoutY="33.0" prefHeight="50.0" prefWidth="500.0" styleClass="tf-box">
+               <children>
+                  <TextField fx:id="tfNumTelUser" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Num Tel User" styleClass="tf" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </TextField>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="8.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../image/tel.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Label fx:id="lbNumTelSignUp" layoutX="669.0" layoutY="97.0" opacity="0.7" prefHeight="23.0" prefWidth="447.0">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <HBox layoutX="643.0" layoutY="160.0" prefHeight="50.0" prefWidth="500.0" styleClass="tf-box">
+               <children>
+                  <PasswordField fx:id="tfPasswordUser" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Password" styleClass="tf" HBox.hgrow="ALWAYS" />
+                  <ImageView fitHeight="30.0" fitWidth="30.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="8.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../image/passwoes.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Label fx:id="lbPasswordSignUp" layoutX="653.0" layoutY="224.0" opacity="0.7" prefHeight="30.0" prefWidth="481.0">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <HBox layoutX="643.0" layoutY="285.0" prefHeight="50.0" prefWidth="500.0" styleClass="tf-box">
+               <children>
+                  <PasswordField fx:id="tfConfirmePasswordUser" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Confime Password" styleClass="tf" HBox.hgrow="ALWAYS" />
+                  <ImageView fitHeight="30.0" fitWidth="30.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="8.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../image/passwoes.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Label fx:id="lbConfirmePasswordSignUp" layoutX="669.0" layoutY="345.0" opacity="0.7" prefHeight="30.0" prefWidth="473.0">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+         </children>
+      </Pane>
+      <HBox alignment="CENTER" prefHeight="45.0" prefWidth="190.0">
+         <children>
+            <Button fx:id="btnAddUser" mnemonicParsing="false" onAction="#signUpAction" prefHeight="40.0" prefWidth="186.0" styleClass="pink1-btn" text="Add">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

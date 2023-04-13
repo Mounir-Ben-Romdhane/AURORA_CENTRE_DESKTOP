@@ -6,6 +6,7 @@
 package ui;
 
 
+import animatefx.animation.Pulse;
 import java.io.IOException;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
@@ -35,6 +36,8 @@ public class NewFXMain extends Application {
         primaryStage.setScene(scene);
         primaryStage.initStyle(StageStyle.TRANSPARENT);
         primaryStage.show();
+        
+        new Pulse(root).play();
     }
 
     /**

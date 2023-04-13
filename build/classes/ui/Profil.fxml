@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox id="VBox" fx:id="VBoxProfil" prefHeight="538.0" prefWidth="1203.0" styleClass="white-pane" stylesheets="@styleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.ProfilController">
+   <children>
+      <Pane prefHeight="543.0" prefWidth="1203.0">
+         <children>
+            <HBox layoutX="421.0" layoutY="78.0" prefHeight="50.0" prefWidth="570.0" styleClass="tf-box">
+               <children>
+                  <TextField fx:id="tfFullNameProfil" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="FullName" styleClass="tf" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="8.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../image/fullName.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox layoutX="421.0" layoutY="173.0" prefHeight="50.0" prefWidth="570.0" styleClass="tf-box">
+               <children>
+                  <TextField fx:id="tfFullAddressProfil" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="FullAddress " styleClass="tf" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="8.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../image/address.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox layoutX="421.0" layoutY="307.0" prefHeight="50.0" prefWidth="570.0" styleClass="tf-box">
+               <children>
+                  <TextField fx:id="tfNumTelProfil" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Phone" styleClass="tf" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </TextField>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="8.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../image/tel.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox layoutX="421.0" layoutY="393.0" prefHeight="44.0" prefWidth="570.0" styleClass="tf-box">
+               <children>
+                  <TextField fx:id="tfEmailProfil" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Email User" styleClass="tf" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="8.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../image/téléchargement.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Label fx:id="hello" alignment="CENTER" contentDisplay="CENTER" layoutX="89.0" layoutY="7.0" prefHeight="64.0" prefWidth="159.0" text="PROFIL details" textFill="#d46d6d">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="hello1" alignment="CENTER" contentDisplay="CENTER" layoutX="177.0" layoutY="71.0" prefHeight="64.0" prefWidth="74.0" text="Full Name :" textFill="#d46d6d">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="hello11" alignment="CENTER" contentDisplay="CENTER" layoutX="172.0" layoutY="166.0" prefHeight="64.0" prefWidth="74.0" text="Address :" textFill="#d46d6d">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="hello2" alignment="CENTER" contentDisplay="CENTER" layoutX="89.0" layoutY="238.0" prefHeight="64.0" prefWidth="159.0" text="Contact info" textFill="#d46d6d">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="hello111" alignment="CENTER" contentDisplay="CENTER" layoutX="177.0" layoutY="300.0" prefHeight="64.0" prefWidth="74.0" text="Phone :" textFill="#d46d6d">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="hello1111" alignment="CENTER" contentDisplay="CENTER" layoutX="177.0" layoutY="383.0" prefHeight="64.0" prefWidth="74.0" text="Email :" textFill="#d46d6d">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnModifProfil" layoutX="509.0" layoutY="485.0" mnemonicParsing="false" onAction="#changeProfilAction" prefHeight="40.0" prefWidth="186.0" styleClass="pink1-btn" text="SAVE CHANGES">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="lbFullNameProfil" layoutX="435.0" layoutY="135.0" opacity="0.7" prefHeight="30.0" prefWidth="437.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbFullAddresseProfil" layoutX="435.0" layoutY="230.0" opacity="0.7" prefHeight="30.0" prefWidth="473.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbNumTelProfil" layoutX="435.0" layoutY="364.0" opacity="0.7" prefHeight="23.0" prefWidth="447.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbEmailProfil" layoutX="435.0" layoutY="447.0" opacity="0.7" prefHeight="30.0" prefWidth="460.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</VBox>

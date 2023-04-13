@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bd4c9735-5311-43ed-8928-bc851b08b414" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/build/built-jar.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/built-jar.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/entite/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/entite/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/ui/Dashboard.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/ui/Detail.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/ui/Detail.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/ui/FXMLController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/ui/FXMLController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/ui/ForgetPass.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/ui/ForgetPass.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/ui/Main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/ui/Main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/ui/NewFXMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/ui/NewFXMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/ui/SignIn.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/ui/SignIn.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/ui/SignInController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/ui/SignInController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/ui/SignInController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/ui/SignInController$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/ui/SignInController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/ui/SignInController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/ui/SignUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/ui/SignUp.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/ui/SignUpController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/ui/SignUpController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/ui/SignUpController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/ui/SignUpController$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/ui/SignUpController$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/ui/SignUpController$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/ui/SignUpController$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/ui/SignUpController$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/ui/SignUpController$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/ui/SignUpController$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/ui/SignUpController$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/ui/SignUpController$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/ui/SignUpController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/ui/SignUpController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/ui/styleSheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/ui/styleSheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/ConnexionBD3A43.jar" beforeDir="false" afterPath="$PROJECT_DIR$/dist/ConnexionBD3A43.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/fontawesomefx-8.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/project.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entite/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entite/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/Dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/DashboardAdmin.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/Detail.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/Detail.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/FXMLController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/FXMLController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/ForgetPass.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/ForgetPass.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/Main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/Main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/NewFXMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/NewFXMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/SignIn.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/SignIn.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/SignInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/SignInController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/SignUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/SignUp.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/SignUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/SignUpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/styleSheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/styleSheet.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2OG4vlHKVfvpiClbPCD9xYR7J8y" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bd4c9735-5311-43ed-8928-bc851b08b414" name="Default Changelist" comment="" />
+      <created>1681173817070</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1681173817070</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1681173890931">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1681173890931" />
+    <state x="618" y="321" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1681173850970">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="618" y="321" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.864@0.0.1536.864" timestamp="1681173850970" />
+  </component>
+</project>

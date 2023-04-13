@@ -21,6 +21,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.control.TextFormatter;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
@@ -157,7 +158,7 @@ public class SignUpController implements Initializable {
                 }else if(length>=5 && length<=8){
                     lbFullAddressSignUp.setText("Good");
                     lbFullAddressSignUp.setTextFill(Color.BLUE);
-                    bName=true;
+                    bAdd=true;
                 }else if(length>8){
                     lbFullAddressSignUp.setText("Strong");
                     lbFullAddressSignUp.setTextFill(Color.GREEN);
@@ -170,10 +171,21 @@ public class SignUpController implements Initializable {
         //COntrole saisie numTel
         lbNumTelSignUp.setFont(Font.font("Roboto",FontWeight.BOLD,12));
         
+        TextFormatter<String> textFormatter = new TextFormatter<>(change -> {
+                String newText = change.getControlNewText();
+                if (newText.matches("\\d{0,8}")) {
+                    return change;
+                }
+                return null;
+            });
+            tfNumTel.setTextFormatter(textFormatter);
+        
         tfNumTel.onKeyReleasedProperty().set(new EventHandler<KeyEvent>(){
             @Override
             public void handle(KeyEvent event) {
                 int length = tfNumTel.getText().toString().length();
+                
+                
                 
                 if(length == 0){
                     lbNumTelSignUp.setText("Please enter your phone number");

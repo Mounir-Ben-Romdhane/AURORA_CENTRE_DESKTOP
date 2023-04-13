@@ -50,12 +50,14 @@ public class UserService implements IService<User> {
     @FXML
     private TextField hide;
     
+   public User userConnect;
+  
+    
     
     
     
     public UserService() {
         conn = DataSource.getInstance().getCnx();
-        
     }
     
     
@@ -104,7 +106,7 @@ public class UserService implements IService<User> {
         ResultSet resultSet = null;
         String res = "false";
         try {
-            preparedStatement = conn.prepareStatement("SELECT password , email FROM user WHERE email = ?");
+            preparedStatement = conn.prepareStatement("SELECT * FROM user WHERE email = ?");
             preparedStatement.setString(1, email);
             resultSet = preparedStatement.executeQuery();
             
@@ -117,13 +119,34 @@ public class UserService implements IService<User> {
                    String retrievedPassword = resultSet.getString("password");
                    
                     if(BCrypt.checkpw(password, retrievedPassword)){
-                        System.out.println("Login succes!");
+                        
+                        if(resultSet.getString("roles").equals("[\"ROLE_ADMIN\"]")){
+                            System.out.println("ADMIN");
+                            res = "trueAdmin";
+                            userConnect = new User(resultSet.getString("username"),resultSet.getString("email"),
+                            resultSet.getString("num_tel"),resultSet.getString("full_address"));
+                            System.out.println(userConnect.toString());
+                            userConnect.setCurrent_User(userConnect);
+                            break;
+                        }else if(resultSet.getString("roles").equals("[\"ROLE_USER\"]")){
+                            System.out.println("USER");
+                            res = "trueUser";
+                            userConnect = new User(resultSet.getString("username"),resultSet.getString("email"),
+                            resultSet.getString("num_tel"),resultSet.getString("full_address"));
+                            System.out.println(userConnect.toString());
+                            userConnect.setCurrent_User(userConnect);
+                            break;
+                        }
+                        
+                        
+                        /*
                         Alert alert = new Alert(Alert.AlertType.INFORMATION);
                         alert.setContentText("User Login succesfully!");
                         alert.setTitle("Succes");
                         alert.setHeaderText(null);
                         alert.show();
-                        res = "true";
+                        */
+                        
                         break;
                     }
                     if(!retrievedPassword.equals(password)){
@@ -132,6 +155,9 @@ public class UserService implements IService<User> {
                     }
                 }
             }
+            
+            
+            
             
         } catch (SQLException e) {
             e.printStackTrace();
@@ -240,6 +266,31 @@ public class UserService implements IService<User> {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+   
+    
+    public User getCurrentUser(){
+        //System.out.println("Mail user connected : "+userConnect.getCurrent_User());
+        return userConnect.getCurrent_User();
+    }
+    
+    
+    public void updateProfil(User p)  throws Exception{
+        String requete = "UPDATE user SET username = ?, email = ?, num_tel = ?, full_address = ? WHERE email = ?";
+        try {   
+                    PreparedStatement pst=conn.prepareStatement(requete);
+                    pst.setString(1, p.getUserName());
+                    pst.setString(2, p.getEmail());
+                    pst.setString(3, p.getNumTel());
+                    pst.setString(4, p.getFullAddress());
+                    pst.setString(5, p.getEmail());
+                    pst.executeUpdate();
+                    userConnect.setCurrent_User(p);
+ 
+        } catch (SQLException ex) {
+            Logger.getLogger(UserService.class.getName()).log(Level.SEVERE, null, ex);
+        }
+             
+    }
     
     
     

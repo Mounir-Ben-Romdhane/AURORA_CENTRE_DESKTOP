@@ -103,7 +103,7 @@
             <Insets left="15.0" right="15.0" top="20.0" />
          </VBox.margin>
          <children>
-            <Button fx:id="btnForgetPass" mnemonicParsing="false" onAction="#btnForgetPassAction" prefHeight="35.0" prefWidth="140.0" styleClass="pink-btn" text="Reset Password">
+            <Button fx:id="btnForgetPass" mnemonicParsing="false" onAction="#btnForgetPassAction" prefHeight="35.0" prefWidth="140.0" styleClass="pink1-btn" text="Reset Password">
                <font>
                   <Font size="15.0" />
                </font>

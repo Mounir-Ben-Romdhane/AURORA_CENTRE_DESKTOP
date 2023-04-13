@@ -78,7 +78,7 @@
             <Insets left="15.0" right="15.0" top="20.0" />
          </VBox.margin>
          <children>
-            <Button fx:id="btnSignIn" mnemonicParsing="false" onAction="#btnSignInAction" prefHeight="35.0" prefWidth="120.0" styleClass="pink-btn" text="Sign In">
+            <Button fx:id="btnSignIn" mnemonicParsing="false" onAction="#btnSignInAction" prefHeight="35.0" prefWidth="120.0" styleClass="pink1-btn" text="Sign In">
                <font>
                   <Font size="15.0" />
                </font>
