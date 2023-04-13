@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox id="VBox" fx:id="VBoxShowUsers" prefHeight="538.0" prefWidth="1203.0" styleClass="white-pane" stylesheets="@styleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.AfficheUsersController">
+   <children>
+      <GridPane prefHeight="538.0" prefWidth="1203.0" stylesheets="@styleSheet.css">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="178.19998779296876" minHeight="10.0" prefHeight="56.79999389648438" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="482.4000061035157" minHeight="10.0" prefHeight="482.4000061035157" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <TableView fx:id="tableViewUsers" prefHeight="465.0" prefWidth="1203.0" style="-fx-alignment: center;" stylesheets="@styleSheet.css" GridPane.rowIndex="1">
+               <columns>
+                  <TableColumn fx:id="fullNameCol" maxWidth="4000.0" minWidth="20.0" style="-fx-alignment: center;" text="FullName" />
+                  <TableColumn fx:id="emailCol" minWidth="20.0" prefWidth="60.0" style="-fx-alignment: center;" text="Email" />
+                  <TableColumn fx:id="addCol" minWidth="75.0" prefWidth="75.0" text="Address" />
+                  <TableColumn fx:id="numTelCol" maxWidth="3500.0" prefWidth="133.5999755859375" style="-fx-alignment: center;" text="Num Tel " />
+                  <TableColumn fx:id="isVerifiedCol" maxWidth="4000.0" prefWidth="60.0" style="-fx-alignment: center;" text="Is_Verified" />
+                  <TableColumn fx:id="actionsCol" maxWidth="3000.0" prefWidth="232.00006103515625" style="-fx-alignment: center;" text="Actions" />
+               </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <HBox alignment="CENTER_LEFT" prefHeight="54.0" prefWidth="900.0">
+               <children>
+                  <FontAwesomeIconView fill="#fca5a5" glyphName="SEARCH" size="25">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+                  <TextField prefHeight="44.0" prefWidth="693.0" style="-fx-border-radius: 20px; -fx-border-width: 2px; -fx-background-color: white; -fx-border-color: #fca5a5;">
+                     <HBox.margin>
+                        <Insets left="20.0" right="170.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <ComboBox prefHeight="30.0" prefWidth="255.0" promptText="Trier par :" style="-fx-border-color: #fca5a5;" styleClass="trans-btn-white-border">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin></ComboBox>
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+   </children>
+</VBox>

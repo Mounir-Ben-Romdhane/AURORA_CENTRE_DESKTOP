@@ -4,6 +4,7 @@
  */
 package ui;
 
+import animatefx.animation.Pulse;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -16,6 +17,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 import javafx.util.Duration;
 
@@ -39,6 +41,8 @@ public class FXMLController implements Initializable {
     private Button btnForgetPassSignUp;
     @FXML
     private Button btnForgetPassSignIn;
+    @FXML
+    private AnchorPane rootPane;
 
     /**
      * Initializes the controller class.
@@ -54,6 +58,7 @@ public class FXMLController implements Initializable {
                 fxml = FXMLLoader.load(getClass().getResource("SignIn.fxml"));
                 vbox.getChildren().removeAll();
                 vbox.getChildren().setAll(fxml);
+                new Pulse(vbox).play();
             } catch (IOException ex) {
                 Logger.getLogger(FXMLController.class.getName()).log(Level.SEVERE, null, ex);
             }
@@ -70,6 +75,7 @@ public class FXMLController implements Initializable {
                 fxml = FXMLLoader.load(getClass().getResource("SignUp.fxml"));
                 vbox.getChildren().removeAll();
                 vbox.getChildren().setAll(fxml);
+                 new Pulse(vbox).play();
             } catch (IOException ex) {
                 Logger.getLogger(FXMLController.class.getName()).log(Level.SEVERE, null, ex);
             }
@@ -86,6 +92,7 @@ public class FXMLController implements Initializable {
                 fxml = FXMLLoader.load(getClass().getResource("SignIn.fxml"));
                 vbox.getChildren().removeAll();
                 vbox.getChildren().setAll(fxml);
+                 new Pulse(vbox).play();
             } catch (IOException ex) {
                 Logger.getLogger(FXMLController.class.getName()).log(Level.SEVERE, null, ex);
             }
@@ -102,6 +109,7 @@ public class FXMLController implements Initializable {
                 fxml = FXMLLoader.load(getClass().getResource("ForgetPass.fxml"));
                 vbox.getChildren().removeAll();
                 vbox.getChildren().setAll(fxml);
+                 new Pulse(vbox).play();
             } catch (IOException ex) {
                 Logger.getLogger(FXMLController.class.getName()).log(Level.SEVERE, null, ex);
             }
@@ -118,6 +126,7 @@ public class FXMLController implements Initializable {
                 fxml = FXMLLoader.load(getClass().getResource("ForgetPass.fxml"));
                 vbox.getChildren().removeAll();
                 vbox.getChildren().setAll(fxml);
+                 new Pulse(vbox).play();
             } catch (IOException ex) {
                 Logger.getLogger(FXMLController.class.getName()).log(Level.SEVERE, null, ex);
             }

@@ -4,6 +4,8 @@
  */
 package ui;
 
+import animatefx.animation.BounceIn;
+import animatefx.animation.FadeIn;
 import entite.User;
 import java.io.IOException;
 import java.net.URL;
@@ -19,6 +21,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -32,6 +35,8 @@ import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import javafx.util.Duration;
 import service.UserService;
 
@@ -142,12 +147,50 @@ public class SignInController implements Initializable {
     private void btnSignInAction(ActionEvent event) throws Exception {
         UserService ps = new UserService();
         if(bEmail && bPass){
-            if(ps.SignInUser(tfEmailSignIn.getText(), tfPasswordSignIn.getText())=="true"){
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("Dashboard.fxml"));
+            if(ps.SignInUser(tfEmailSignIn.getText(), tfPasswordSignIn.getText())=="trueAdmin"){
+                            
+                            Stage currentStage = (Stage) btnSignIn.getScene().getWindow();
+                            currentStage.close();
+                
+                            Stage stage = new Stage();
+                            FXMLLoader loader = new FXMLLoader(getClass().getResource("DashboardAdmin.fxml"));
 
-            Parent root = loader.load();
-            tfEmailSignIn.getScene().setRoot(root);
-            }else if(ps.SignInUser(tfEmailSignIn.getText(), tfPasswordSignIn.getText())=="false"){
+                            Parent root = loader.load();
+                           // tfEmailSignIn.getScene().setRoot(root);
+
+                            btnSignIn.getScene().setFill(Color.TRANSPARENT);
+                            stage.setTitle("Dashboard Admin");
+                            stage.initStyle(StageStyle.TRANSPARENT);
+                            stage.setScene(new Scene(root));
+                            stage.show();
+                            
+                            new BounceIn(root).play();
+                            
+                            /*
+                            
+                            tfEmailSignIn.setText("");
+                            tfPasswordSignIn.setText("");
+                            lbEmailSignIn.setText("Please enter your email");
+                            lbEmailSignIn.setTextFill(Color.BLACK);
+                            lbPasswordSignIn.setText("Please enter your password");
+                            lbPasswordSignIn.setTextFill(Color.BLACK);
+                               */
+            }else if(ps.SignInUser(tfEmailSignIn.getText(), tfPasswordSignIn.getText())=="trueUser"){
+                Stage stage = new Stage();
+                            FXMLLoader loader = new FXMLLoader(getClass().getResource("DashboardClient.fxml"));
+
+                            Parent root = loader.load();
+                           // tfEmailSignIn.getScene().setRoot(root);
+
+                            btnSignIn.getScene().setFill(Color.TRANSPARENT);
+                            stage.setTitle("Dashboard Client");
+                            stage.initStyle(StageStyle.TRANSPARENT);
+                            stage.setScene(new Scene(root));
+                            stage.show();
+                           // tfEmailSignIn.setText("");
+                            //tfPasswordSignIn.setText("");
+            }
+            else if(ps.SignInUser(tfEmailSignIn.getText(), tfPasswordSignIn.getText())=="false"){
                 Alert alert = new Alert(Alert.AlertType.ERROR);
                             alert.setTitle("Password incorrect");
                             alert.setContentText("Provided credentials are incorrect!");

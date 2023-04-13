@@ -3,11 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/MSI/OneDrive/Bureau/NetBeansProjects/ConnexionBD3A43/src/ui/NewFXMain.java</file>
-            <file>file:/C:/Users/MSI/OneDrive/Bureau/NetBeansProjects/ConnexionBD3A43/src/ui/SignInController.java</file>
-            <file>file:/C:/Users/MSI/OneDrive/Bureau/NetBeansProjects/ConnexionBD3A43/src/service/UserService.java</file>
-            <file>file:/C:/Users/MSI/OneDrive/Bureau/NetBeansProjects/ConnexionBD3A43/src/ui/ForgetPassController.java</file>
-            <file>file:/C:/Users/MSI/OneDrive/Bureau/NetBeansProjects/ConnexionBD3A43/src/ui/SignUpController.java</file>
+            <file>file:/C:/Users/MSI/OneDrive/Documents/GitHub/PIDEV_DESKTOP/src/ui/NewFXMain.java</file>
+            <file>file:/C:/Users/MSI/OneDrive/Documents/GitHub/PIDEV_DESKTOP/src/ui/DashboardAdminController.java</file>
+            <file>file:/C:/Users/MSI/OneDrive/Documents/GitHub/PIDEV_DESKTOP/src/ui/SignUpController.java</file>
+            <file>file:/C:/Users/MSI/OneDrive/Documents/GitHub/PIDEV_DESKTOP/src/entite/User.java</file>
+            <file>file:/C:/Users/MSI/OneDrive/Documents/GitHub/PIDEV_DESKTOP/src/ui/SignInController.java</file>
+            <file>file:/C:/Users/MSI/OneDrive/Documents/GitHub/PIDEV_DESKTOP/src/ui/AfficheUsersController.java</file>
+            <file>file:/C:/Users/MSI/OneDrive/Documents/GitHub/PIDEV_DESKTOP/src/ui/FXMLController.java</file>
+            <file>file:/C:/Users/MSI/OneDrive/Documents/GitHub/PIDEV_DESKTOP/src/service/UserService.java</file>
+            <file>file:/C:/Users/MSI/OneDrive/Documents/GitHub/PIDEV_DESKTOP/src/ui/styleSheet.css</file>
+            <file>file:/C:/Users/MSI/OneDrive/Documents/GitHub/PIDEV_DESKTOP/src/ui/afficheUsers.fxml</file>
         </group>
     </open-files>
 </project-private>

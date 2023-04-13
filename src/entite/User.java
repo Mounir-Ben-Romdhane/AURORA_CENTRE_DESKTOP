@@ -12,7 +12,10 @@ package entite;
 public class User {
 
     private float id;
-    String userName,email,numTel,fullAddress,password;
+    String userName,email,numTel,fullAddress,password,isVerified;
+    public static User Current_User;
+
+    
 
     public User() {
     }
@@ -42,6 +45,15 @@ public class User {
         this.email = email;
         this.numTel = numTel;
         this.fullAddress = fullAddress;
+    }
+    
+    public User(float id, String userName, String email, String numTel, String fullAddress,String isVerified) {
+        this.id = id;
+        this.userName = userName;
+        this.email = email;
+        this.numTel = numTel;
+        this.fullAddress = fullAddress;
+        this.isVerified = isVerified;
     }
     
     
@@ -105,8 +117,24 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" + "userName=" + userName + ", email=" + email + ", numTel=" + numTel + ", fullAddress=" + fullAddress + ", password=" + password + '}';
+        return "User{" + "userName=" + userName + ", email=" + email + ", numTel=" + numTel + ", fullAddress=" + fullAddress + '}';
     }
-    
+
+    public String getIsVerified() {
+        return isVerified;
+    }
+
+    public void setIsVerified(String isVerified) {
+        this.isVerified = isVerified;
+    }
+
+  
+    public static User getCurrent_User() {
+        return Current_User;
+    }
+
+    public static void setCurrent_User(User Current_User) {
+        User.Current_User = Current_User;
+    }
 
 }

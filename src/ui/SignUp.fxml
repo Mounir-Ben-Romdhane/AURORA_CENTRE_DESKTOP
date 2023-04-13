@@ -101,7 +101,7 @@
       </Label>
       <HBox layoutX="25.0" layoutY="164.0" prefHeight="45.0" prefWidth="200.0" styleClass="tf-box">
          <children>
-            <TextField fx:id="tfNumTel" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Num Tel" styleClass="tf" HBox.hgrow="ALWAYS">
+            <TextField fx:id="tfNumTel" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Phone Number" styleClass="tf" HBox.hgrow="ALWAYS">
                <font>
                   <Font size="15.0" />
                </font>
@@ -174,7 +174,7 @@
             <Insets bottom="20.0" left="15.0" right="15.0" top="20.0" />
          </VBox.margin>
          <children>
-            <Button fx:id="btnSignUp" mnemonicParsing="false" onAction="#signUpAction" prefHeight="35.0" prefWidth="120.0" styleClass="pink-btn" text="Sign Up">
+            <Button fx:id="btnSignUp" mnemonicParsing="false" onAction="#signUpAction" prefHeight="35.0" prefWidth="120.0" styleClass="pink1-btn" text="Sign Up">
                <font>
                   <Font size="15.0" />
                </font>
