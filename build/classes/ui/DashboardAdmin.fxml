@@ -70,7 +70,7 @@
                   <Font name="System Bold" size="12.0" />
                </font>
                <graphic>
-                  <FontAwesomeIconView fill="WHITE" glyphName="ADDRESS_CARD_ALT" size="20" />
+                  <FontAwesomeIconView fill="WHITE" glyphName="USER" size="20" />
                </graphic>
             </Button>
             <Button fx:id="btnLogOut" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleLogOut" prefHeight="48.0" prefWidth="294.0" styleClass="pink-btn" text="LOG OUT">
@@ -86,7 +86,7 @@
             </Button>
          </children>
       </VBox>
-      <Pane fx:id="pnlStatus" layoutX="294.0" layoutY="133.0" prefHeight="134.0" prefWidth="1245.0" style="-fx-background-color: #fca5a5;" AnchorPane.bottomAnchor="583.0" AnchorPane.leftAnchor="294.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="133.0">
+      <Pane fx:id="pnlStatus" layoutX="294.0" layoutY="134.0" prefHeight="134.0" prefWidth="1245.0" style="-fx-background-color: #fca5a5;" AnchorPane.bottomAnchor="582.0" AnchorPane.leftAnchor="294.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="134.0">
          <children>
             <Label fx:id="lplStatus" layoutX="21.0" layoutY="41.0" prefHeight="66.0" prefWidth="368.0" text="HOME" textFill="WHITE">
                <font>
