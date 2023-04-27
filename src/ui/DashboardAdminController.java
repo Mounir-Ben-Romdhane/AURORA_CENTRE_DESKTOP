@@ -31,6 +31,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import service.UserService;
 
 /**
  * FXML Controller class
@@ -111,9 +112,12 @@ public class DashboardAdminController implements Initializable {
     }
 
     @FXML
-    private void handleLogOut(ActionEvent event) throws IOException {
+    private void handleLogOut(ActionEvent event) throws IOException, Exception {
                              Stage currentStage = (Stage) btnLogOut.getScene().getWindow();
                             currentStage.close();
+                            
+                            UserService ps = new UserService();
+                            ps.rememberMe("", 0);
                 
                             Stage stage = new Stage();
                             FXMLLoader loader = new FXMLLoader(getClass().getResource("Main.fxml"));
