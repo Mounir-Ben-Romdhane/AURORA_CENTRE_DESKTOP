@@ -18,7 +18,7 @@
                   <Font size="20.0" />
                </font>
             </Label>
-            <Label layoutX="73.0" layoutY="193.0" minHeight="-Infinity" minWidth="-Infinity" prefWidth="269.0" text="Lorem ipsim is a dummy text used as a placeholder in websites. " textFill="WHITE" wrapText="true">
+            <Label layoutX="73.0" layoutY="193.0" minHeight="-Infinity" minWidth="-Infinity" prefWidth="269.0" text="Welcome in our app. Hope to enjoy with us and get the best services." textFill="WHITE" wrapText="true">
                <font>
                   <Font size="16.0" />
                </font>
@@ -42,7 +42,7 @@
                   <Font size="20.0" />
                </font>
             </Label>
-            <Label layoutX="638.0" layoutY="193.0" minHeight="-Infinity" minWidth="-Infinity" prefWidth="269.0" text="Lorem ipsim is a dummy text used as a placeholder in websites. " textFill="WHITE" wrapText="true">
+            <Label layoutX="638.0" layoutY="193.0" minHeight="-Infinity" minWidth="-Infinity" prefWidth="269.0" text="Welcome in our app. Hope to enjoy with us and get the best services." textFill="WHITE" wrapText="true">
                <font>
                   <Font size="16.0" />
                </font>

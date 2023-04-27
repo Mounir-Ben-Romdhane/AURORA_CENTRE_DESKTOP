@@ -2,6 +2,7 @@
 
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
@@ -11,6 +12,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 <VBox id="VBox" fx:id="VBoxShowUsers" prefHeight="538.0" prefWidth="1203.0" styleClass="white-pane" stylesheets="@styleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.AfficheUsersController">
    <children>
@@ -25,12 +27,13 @@
          <children>
             <TableView fx:id="tableViewUsers" prefHeight="465.0" prefWidth="1203.0" style="-fx-alignment: center;" stylesheets="@styleSheet.css" GridPane.rowIndex="1">
                <columns>
-                  <TableColumn fx:id="fullNameCol" maxWidth="4000.0" minWidth="20.0" style="-fx-alignment: center;" text="FullName" />
-                  <TableColumn fx:id="emailCol" minWidth="20.0" prefWidth="60.0" style="-fx-alignment: center;" text="Email" />
-                  <TableColumn fx:id="addCol" minWidth="75.0" prefWidth="75.0" text="Address" />
+                  <TableColumn fx:id="fullNameCol" maxWidth="3800.0" minWidth="20.0" style="-fx-alignment: center;" text="FullName" />
+                  <TableColumn fx:id="emailCol" maxWidth="4500.0" minWidth="20.0" prefWidth="60.0" style="-fx-alignment: center;" text="Email" />
+                  <TableColumn fx:id="addCol" maxWidth="3800.0" minWidth="70.0" prefWidth="70.0" text="Address" />
                   <TableColumn fx:id="numTelCol" maxWidth="3500.0" prefWidth="133.5999755859375" style="-fx-alignment: center;" text="Num Tel " />
                   <TableColumn fx:id="isVerifiedCol" maxWidth="4000.0" prefWidth="60.0" style="-fx-alignment: center;" text="Is_Verified" />
-                  <TableColumn fx:id="actionsCol" maxWidth="3000.0" prefWidth="232.00006103515625" style="-fx-alignment: center;" text="Actions" />
+                  <TableColumn fx:id="etatCol" maxWidth="3300.0" prefWidth="133.5999755859375" style="-fx-alignment: center;" text="Etat" />
+                  <TableColumn fx:id="actionsCol" maxWidth="2300.0" prefWidth="232.00006103515625" style="-fx-alignment: center;" text="Actions" />
                </columns>
                <columnResizePolicy>
                   <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
@@ -43,14 +46,25 @@
                         <Insets left="10.0" />
                      </HBox.margin>
                   </FontAwesomeIconView>
-                  <TextField prefHeight="44.0" prefWidth="693.0" style="-fx-border-radius: 20px; -fx-border-width: 2px; -fx-background-color: white; -fx-border-color: #fca5a5;">
+                  <TextField fx:id="tfSearch" prefHeight="44.0" prefWidth="650.0" style="-fx-border-radius: 20px; -fx-border-width: 2px; -fx-background-color: white; -fx-border-color: #fca5a5;">
                      <HBox.margin>
                         <Insets left="20.0" right="170.0" />
                      </HBox.margin>
                   </TextField>
-                  <ComboBox prefHeight="30.0" prefWidth="255.0" promptText="Trier par :" style="-fx-border-color: #fca5a5;" styleClass="trans-btn-white-border">
+                  <Button fx:id="btnSave" mnemonicParsing="false" onAction="#handleSaveFile" prefHeight="34.0" prefWidth="50.0" styleClass="pink1-btn">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="DOWNLOAD" size="20" wrappingWidth="17.48578643798828" />
+                     </graphic>
                      <HBox.margin>
-                        <Insets left="30.0" />
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <ComboBox fx:id="comboBox" onAction="#Select" prefHeight="30.0" prefWidth="255.0" promptText="Trier par :" style="-fx-border-color: #fca5a5;" styleClass="trans-btn-white-border">
+                     <HBox.margin>
+                        <Insets left="10.0" right="20.0" />
                      </HBox.margin></ComboBox>
                </children>
             </HBox>

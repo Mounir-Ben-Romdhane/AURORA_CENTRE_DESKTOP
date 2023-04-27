@@ -19,6 +19,7 @@ import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 import javafx.scene.paint.Color;
 import javafx.stage.StageStyle;
+import service.UserService;
 
 /**
  *
@@ -27,8 +28,30 @@ import javafx.stage.StageStyle;
 public class NewFXMain extends Application {
     
     @Override
-    public void start(Stage primaryStage) throws IOException {
-        Parent root=FXMLLoader.load(getClass().getResource("Main.fxml"));
+    public void start(Stage primaryStage) throws IOException, Exception {
+        
+        UserService ps = new UserService();
+        if(ps.getRememberMe()=="trueAdmin"){
+        Parent root=FXMLLoader.load(getClass().getResource("DashboardAdmin.fxml"));
+        Scene scene = new Scene(root);
+        scene.setFill(Color.TRANSPARENT);
+        primaryStage.setScene(scene);
+        primaryStage.initStyle(StageStyle.TRANSPARENT);
+        primaryStage.show();
+        
+        new Pulse(root).play();
+        }else if(ps.getRememberMe()=="trueUser"){
+            Parent root=FXMLLoader.load(getClass().getResource("DashboardClient.fxml"));
+        Scene scene = new Scene(root);
+        scene.setFill(Color.TRANSPARENT);
+        primaryStage.setScene(scene);
+        primaryStage.initStyle(StageStyle.TRANSPARENT);
+        primaryStage.show();
+        
+        new Pulse(root).play();
+        }
+        else{
+            Parent root=FXMLLoader.load(getClass().getResource("Main.fxml"));
         
         
         Scene scene = new Scene(root);
@@ -38,6 +61,9 @@ public class NewFXMain extends Application {
         primaryStage.show();
         
         new Pulse(root).play();
+        }
+        
+        
     }
 
     /**

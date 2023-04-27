@@ -5,13 +5,8 @@
         <group>
             <file>file:/C:/Users/MSI/OneDrive/Documents/GitHub/PIDEV_DESKTOP/src/ui/NewFXMain.java</file>
             <file>file:/C:/Users/MSI/OneDrive/Documents/GitHub/PIDEV_DESKTOP/src/ui/DashboardAdminController.java</file>
-            <file>file:/C:/Users/MSI/OneDrive/Documents/GitHub/PIDEV_DESKTOP/src/ui/DashboardClientController.java</file>
-            <file>file:/C:/Users/MSI/OneDrive/Documents/GitHub/PIDEV_DESKTOP/src/ui/SignUpController.java</file>
-            <file>file:/C:/Users/MSI/OneDrive/Documents/GitHub/PIDEV_DESKTOP/src/entite/User.java</file>
-            <file>file:/C:/Users/MSI/OneDrive/Documents/GitHub/PIDEV_DESKTOP/src/ui/ProfilController.java</file>
-            <file>file:/C:/Users/MSI/OneDrive/Documents/GitHub/PIDEV_DESKTOP/src/ui/SignInController.java</file>
+            <file>file:/C:/Users/MSI/OneDrive/Documents/GitHub/PIDEV_DESKTOP/src/ui/AfficheUsersController.java</file>
             <file>file:/C:/Users/MSI/OneDrive/Documents/GitHub/PIDEV_DESKTOP/src/service/UserService.java</file>
-            <file>file:/C:/Users/MSI/OneDrive/Documents/GitHub/PIDEV_DESKTOP/src/ui/styleSheet.css</file>
         </group>
     </open-files>
 </project-private>

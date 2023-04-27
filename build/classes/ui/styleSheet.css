@@ -11,6 +11,7 @@
     -fx-background-color:#f78c7b;
 }
 
+
 .trans-btn-white-border{
     -fx-background-color:transparent;
     -fx-background-radius:5px;
@@ -34,6 +35,23 @@
     -fx-background-color:#FFFFFF;
 }
 
+.white-pane-signIn{
+    -fx-background-image:url("../image/60242.jpg");
+    -fx-background-size:cover;
+}
+
+.white-pane-forget{
+    -fx-background-image:url("../image/11599.jpg");
+    -fx-background-size:cover;
+}
+
+.white-pane-signUp{
+    -fx-background-image:url("../image/backforgetLeft.jpg");
+    -fx-background-size:cover;
+}
+
+
+
 
 .white-pane-background{
     -fx-background-color:#FFFFFF;
@@ -47,14 +65,31 @@
     -fx-border-width:0px 0px 1px 0px;
 }
 
+.tf-box:pressed{
+    -fx-background-color:transparent;
+    -fx-border-color:#F78C7B;
+    -fx-border-width:0px 0px 1px 0px;
+}
+
+
+
 .tf{
     -fx-background-color:transparent;
+    
+}
+.tf:focused{
+    -fx-background-color:transparent;
+    -fx-border-color: #fca5a5;
+    -fx-border-width:0px 0px 0px 3px;
+    
     
 }
 .tf-ping{
     -fx-background-color:transparent;
     -fx-text-fill:#F78C7B;
 }
+
+
 
 .pink1-btn{
     -fx-background-color:#F78C7B;

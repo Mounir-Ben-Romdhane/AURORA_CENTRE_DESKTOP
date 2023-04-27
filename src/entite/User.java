@@ -5,6 +5,8 @@
  */
 package entite;
 
+import javafx.scene.control.Button;
+
 /**
  *
  * @author wiemhjiri
@@ -12,8 +14,11 @@ package entite;
 public class User {
 
     private float id;
-    String userName,email,numTel,fullAddress,password,isVerified;
+    private String userName,email,numTel,fullAddress,password,isVerified,image;
+    private Button etat;
     public static User Current_User;
+
+   
 
     
 
@@ -47,14 +52,18 @@ public class User {
         this.fullAddress = fullAddress;
     }
     
-    public User(float id, String userName, String email, String numTel, String fullAddress,String isVerified) {
+    
+    
+    public User(float id, String userName, String email, String numTel, String fullAddress,String isVerified,Button etat) {
         this.id = id;
         this.userName = userName;
         this.email = email;
         this.numTel = numTel;
         this.fullAddress = fullAddress;
         this.isVerified = isVerified;
+        this.etat=etat;
     }
+    
     
     
     
@@ -117,7 +126,8 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" + "userName=" + userName + ", email=" + email + ", numTel=" + numTel + ", fullAddress=" + fullAddress + '}';
+        return "User Name = "+userName + "\t Email = " + email + "\t Phone Number = " + numTel + 
+                "\t Full Address = " + fullAddress ;
     }
 
     public String getIsVerified() {
@@ -136,5 +146,25 @@ public class User {
     public static void setCurrent_User(User Current_User) {
         User.Current_User = Current_User;
     }
+
+    public Button getEtat() {
+        return etat;
+    }
+
+    public void setEtat(Button etat) {
+        this.etat = etat;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+   
+    
+    
 
 }

@@ -6,6 +6,7 @@ package ui;
 
 import animatefx.animation.BounceIn;
 import animatefx.animation.FadeIn;
+import animatefx.animation.Swing;
 import entite.User;
 import java.io.IOException;
 import java.net.URL;
@@ -24,6 +25,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
@@ -66,6 +68,8 @@ public class SignInController implements Initializable {
     private ImageView showHidePassword;
     
     private String password;
+    @FXML
+    private CheckBox remember;
   
     
 
@@ -163,6 +167,13 @@ public class SignInController implements Initializable {
                             stage.initStyle(StageStyle.TRANSPARENT);
                             stage.setScene(new Scene(root));
                             stage.show();
+                            int i = 0;
+                            if(remember.isSelected()){
+                                i=1;
+                            }else{
+                                i=0;
+                            }
+                            ps.rememberMe(tfEmailSignIn.getText(), i);
                             
                             new BounceIn(root).play();
                             
@@ -176,7 +187,7 @@ public class SignInController implements Initializable {
                             lbPasswordSignIn.setTextFill(Color.BLACK);
                                */
             }else if(ps.SignInUser(tfEmailSignIn.getText(), tfPasswordSignIn.getText())=="trueUser"){
-                Stage stage = new Stage();
+                            Stage stage = new Stage();
                             FXMLLoader loader = new FXMLLoader(getClass().getResource("DashboardClient.fxml"));
 
                             Parent root = loader.load();
@@ -187,6 +198,14 @@ public class SignInController implements Initializable {
                             stage.initStyle(StageStyle.TRANSPARENT);
                             stage.setScene(new Scene(root));
                             stage.show();
+                            int i = 0;
+                            if(remember.isSelected()){
+                                i=1;
+                            }else{
+                                i=0;
+                            }
+                            ps.rememberMe(tfEmailSignIn.getText(), i);
+                            new BounceIn(root).play();
                            // tfEmailSignIn.setText("");
                             //tfPasswordSignIn.setText("");
             }
@@ -196,7 +215,14 @@ public class SignInController implements Initializable {
                             alert.setContentText("Provided credentials are incorrect!");
                             alert.setHeaderText(null);
                             alert.show();
-            }else{
+            }else if(ps.SignInUser(tfEmailSignIn.getText(), tfPasswordSignIn.getText())=="blocked"){
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                            alert.setTitle("User blocked");
+                            alert.setContentText("You are blocked ! Sorry you can't sign in!");
+                            alert.setHeaderText(null);
+                            alert.show();
+            }
+            else{
                 Alert alert = new Alert(Alert.AlertType.ERROR);
                     alert.setTitle("User not found");
                     alert.setContentText("Provided credentials are incorrect!");

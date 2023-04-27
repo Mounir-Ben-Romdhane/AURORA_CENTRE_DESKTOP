@@ -5,7 +5,11 @@
  */
 package service;
 
+import API.MailerAPI;
+import animatefx.animation.BounceIn;
 import entite.User;
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -24,8 +28,11 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import javax.mail.Authenticator;
 import javax.mail.Message;
 import javax.mail.Message.RecipientType;
@@ -33,6 +40,7 @@ import javax.mail.MessagingException;
 import javax.mail.PasswordAuthentication;
 import javax.mail.Session;
 import javax.mail.Transport;
+import javax.mail.internet.AddressException;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import javax.swing.JOptionPane;
@@ -51,9 +59,7 @@ public class UserService implements IService<User> {
     private TextField hide;
     
    public User userConnect;
-  
-    
-    
+   
     
     
     public UserService() {
@@ -84,6 +90,7 @@ public class UserService implements IService<User> {
                     pst.setString(5, p.getFullAddress());
                     pst.executeUpdate();
                     res1=true;
+                    //MailerAPI.sendEmail(p.getEmail().toString());
             }else{
                 while (resultSet1.next()) {
                     
@@ -120,36 +127,36 @@ public class UserService implements IService<User> {
                    
                     if(BCrypt.checkpw(password, retrievedPassword)){
                         
-                        if(resultSet.getString("roles").equals("[\"ROLE_ADMIN\"]")){
-                            System.out.println("ADMIN");
-                            res = "trueAdmin";
-                            userConnect = new User(resultSet.getString("username"),resultSet.getString("email"),
-                            resultSet.getString("num_tel"),resultSet.getString("full_address"));
-                            System.out.println(userConnect.toString());
-                            userConnect.setCurrent_User(userConnect);
-                            break;
-                        }else if(resultSet.getString("roles").equals("[\"ROLE_USER\"]")){
-                            System.out.println("USER");
-                            res = "trueUser";
-                            userConnect = new User(resultSet.getString("username"),resultSet.getString("email"),
-                            resultSet.getString("num_tel"),resultSet.getString("full_address"));
-                            System.out.println(userConnect.toString());
-                            userConnect.setCurrent_User(userConnect);
-                            break;
+                        if(resultSet.getBoolean("etat")){
+                        
+                            if(resultSet.getString("roles").equals("[\"ROLE_ADMIN\"]")){
+                                System.out.println("ADMIN");
+                                res = "trueAdmin";
+                                userConnect = new User(resultSet.getString("username"),resultSet.getString("email"),
+                                resultSet.getString("num_tel"),resultSet.getString("full_address"));
+                                
+                                userConnect.setCurrent_User(userConnect);
+                                System.out.println(userConnect.toString());
+                                break;
+                            }else if(resultSet.getString("roles").equals("[\"ROLE_USER\"]")){
+                                System.out.println("USER");
+                                res = "trueUser";
+                                userConnect = new User(resultSet.getString("username"),resultSet.getString("email"),
+                                resultSet.getString("num_tel"),resultSet.getString("full_address"));
+                                
+                                userConnect.setCurrent_User(userConnect);
+                                System.out.println(userConnect.toString());
+                                break;
+                            }
+                        }else{
+                            res="blocked";
                         }
                         
-                        
-                        /*
-                        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-                        alert.setContentText("User Login succesfully!");
-                        alert.setTitle("Succes");
-                        alert.setHeaderText(null);
-                        alert.show();
-                        */
                         
                         break;
                     }
                     if(!retrievedPassword.equals(password)){
+                        System.out.println(""+retrievedPassword);
                         System.out.println("Password did not match");
                         res = "false";
                     }
@@ -187,7 +194,7 @@ public class UserService implements IService<User> {
             String query = "UPDATE user SET password = '" + hashedPassword + "' WHERE email = '" + email + "'";
             PreparedStatement pst=conn.prepareStatement(query);
             pst.executeUpdate();
-            System.out.println("Login succes!");
+            //System.out.println("Login succes!");
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setContentText("Password changed successfully !!");
             alert.setHeaderText(null);
@@ -233,16 +240,7 @@ public class UserService implements IService<User> {
              
     }
 
-    @Override
-    public void delete(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void update(User t) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
+    
     @Override
     public List<User> readAll() {
         List<User> list=new ArrayList<>();
@@ -274,15 +272,17 @@ public class UserService implements IService<User> {
     }
     
     
-    public void updateProfil(User p)  throws Exception{
-        String requete = "UPDATE user SET username = ?, email = ?, num_tel = ?, full_address = ? WHERE email = ?";
+    public void updateProfil(User p,FileInputStream fis,File file)  throws Exception{
+        String requete = "UPDATE user SET username = ?, email = ?, num_tel = ?, full_address = ?, imagee = ? WHERE email = ?";
+        
         try {   
                     PreparedStatement pst=conn.prepareStatement(requete);
                     pst.setString(1, p.getUserName());
                     pst.setString(2, p.getEmail());
                     pst.setString(3, p.getNumTel());
                     pst.setString(4, p.getFullAddress());
-                    pst.setString(5, p.getEmail());
+                    pst.setBinaryStream(5,fis,file.length());
+                    pst.setString(6, p.getEmail());
                     pst.executeUpdate();
                     userConnect.setCurrent_User(p);
  
@@ -293,5 +293,186 @@ public class UserService implements IService<User> {
     }
     
     
+    public void resetPassword(String newPass,String email)  throws Exception{
+        try {   
+            String hashedNewPassword = BCrypt.hashpw(newPass, BCrypt.gensalt());
+            String query = "UPDATE user SET password = '" + hashedNewPassword + "' WHERE email = '" + email + "'";
+            PreparedStatement pst=conn.prepareStatement(query);
+            pst.executeUpdate();
+ 
+        } catch (SQLException ex) {
+            Logger.getLogger(UserService.class.getName()).log(Level.SEVERE, null, ex);
+        }
+             
+    }
     
+    
+    public void rememberMe(String email,int rememberChecked)  throws Exception{
+        
+        PreparedStatement preparedStatement = null;
+        ResultSet resultSet = null;
+        boolean res = false;
+        String requete = "insert into remember(email,remember)"
+                + "values('" + email+ "'," + rememberChecked+
+                ")";
+        
+        try {
+          
+                Statement ste = conn.createStatement();
+                ste.executeUpdate(requete);
+            
+            
+        } catch (SQLException ex) {
+            Logger.getLogger(UserService.class.getName()).log(Level.SEVERE, null, ex);
+        }
+             
+    }
+    
+    
+    public String getRememberMe()  throws Exception{
+        PreparedStatement preparedStatement = null;
+        ResultSet resultSet = null;
+        String query = "SELECT * FROM remember ORDER BY id DESC LIMIT 1";
+        String res = "false";
+        
+        
+    try {
+        
+        preparedStatement = conn.prepareStatement(query);
+        resultSet = preparedStatement.executeQuery();
+            while(resultSet.next()){
+                
+                if(resultSet.getInt("remember")==1){
+                    System.out.println("true");
+                           res = userOrAdmin(resultSet.getString("email"));
+                           
+                }else{
+                     res= "false";
+                    System.out.println("false");
+                }
+                
+            }
+    
+            } catch (SQLException ex) {
+            Logger.getLogger(UserService.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    return res;
+    }
+    
+    
+    public String userOrAdmin(String email)  throws Exception{
+        
+        PreparedStatement preparedStatement = null;
+        ResultSet resultSet = null; 
+        String res = "";
+        try {
+                 preparedStatement = conn.prepareStatement("SELECT * FROM user WHERE email = ?");
+                preparedStatement.setString(1, email);
+                resultSet = preparedStatement.executeQuery();
+            
+                while (resultSet.next()) {
+                   
+                   
+                        
+                        if(resultSet.getString("roles").equals("[\"ROLE_ADMIN\"]")){
+                            System.out.println("ADMIN");
+                            res = "trueAdmin";
+                            userConnect = new User(resultSet.getString("username"),resultSet.getString("email"),
+                            resultSet.getString("num_tel"),resultSet.getString("full_address"));
+                            System.out.println(userConnect.toString());
+                            userConnect.setCurrent_User(userConnect);
+                            break;
+                        }else if(resultSet.getString("roles").equals("[\"ROLE_USER\"]")){
+                            System.out.println("USER");
+                            res = "trueUser";
+                            userConnect = new User(resultSet.getString("username"),resultSet.getString("email"),
+                            resultSet.getString("num_tel"),resultSet.getString("full_address"));
+                            System.out.println(userConnect.toString());
+                            userConnect.setCurrent_User(userConnect);
+                            break;
+                        }
+                        
+                        
+                        /*
+                        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                        alert.setContentText("User Login succesfully!");
+                        alert.setTitle("Succes");
+                        alert.setHeaderText(null);
+                        alert.show();
+                        */
+                        
+                        break;
+                }
+                    
+            
+        } catch (SQLException ex) {
+            Logger.getLogger(UserService.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return res;
+             
+    }
+
+    @Override
+    public void delete(int id) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void update(User t) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+    
+     
+     
+     
+     
+     
+      public String blockUser(String email)  throws Exception{
+        
+        PreparedStatement preparedStatement = null;
+        ResultSet resultSet = null;
+        String res = "false";
+        String requete = "select * from user where email=?";
+        
+        try {
+          
+                PreparedStatement smt = conn.prepareStatement(requete);
+                smt.setString(1, email);
+                ResultSet rs= smt.executeQuery();
+            if(rs.next()){
+                   System.out.println("email : "+rs.getString("email")+" etat :"+rs.getString("etat")); 
+                   String rees=rs.getString("etat");
+                   System.out.println("res:"+rees);
+                   if(rs.getInt("etat")==1){
+                       res="true";
+                   }else if (rs.getInt("etat")==0){
+                       res="false";
+                   }
+                }
+            
+        } catch (SQLException ex) {
+            Logger.getLogger(UserService.class.getName()).log(Level.SEVERE, null, ex);
+        }
+          
+           return res;  
+    }
+    
+     public void changeEtat(String email,int etat)  throws Exception{
+        PreparedStatement preparedStatement = null;
+        ResultSet resultSet = null;
+        
+        String query = "UPDATE user SET etatt = '" + etat + "' WHERE email = '" + email + "'";
+        
+        
+        
+    try {
+        
+        preparedStatement = conn.prepareStatement(query);
+        resultSet = preparedStatement.executeQuery();
+            
+            } catch (SQLException ex) {
+            Logger.getLogger(UserService.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    
+    }
 }
