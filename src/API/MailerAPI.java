@@ -17,17 +17,18 @@ import javax.mail.Authenticator;
 
 
 public class MailerAPI {
+    
     public static void sendEmail(String s) {
         
 
-      final String username = "pidevDesktop@gmail.com";
-      final String password = "jaabofxqjclbslgv";
+      final String username = "98bfd03fd80444";
+      final String password = "bec34e1a01f67f";
 
       Properties props = new Properties();
       props.put("mail.smtp.auth", "true");
       props.put("mail.smtp.starttls.enable", "true");
-      props.put("mail.smtp.host", "smtp.gmail.com");
-      props.put("mail.smtp.port", "587");
+      props.put("mail.smtp.host", "sandbox.smtp.mailtrap.io");
+      props.put("mail.smtp.port", "2525");
 
        Session session = Session.getInstance(props,
          new javax.mail.Authenticator() {
@@ -42,10 +43,9 @@ public class MailerAPI {
 
          Message message = new MimeMessage(session);
          message.setFrom(new InternetAddress(username));
-         message.setRecipients(Message.RecipientType.TO,InternetAddress.parse(s,false));
-         message.setSubject("Canceling the event");
-         message.setText("cher Mr/Mme,"
-            + "\n\n nous somme vraiment désolé de vous informer que votre réservation"+" "+ " "+"est annulée merci pour votre compréhension ");
+         message.setRecipients(Message.RecipientType.TO,InternetAddress.parse(s));
+         message.setSubject("Sign Up successfully");
+         message.setText("thank's for sign up in our application ! You are welcome hope you enjoy with us !");
 
          Transport.send(message);
 
@@ -55,4 +55,5 @@ public class MailerAPI {
          throw new RuntimeException(e);
       }
     }
+    
 }

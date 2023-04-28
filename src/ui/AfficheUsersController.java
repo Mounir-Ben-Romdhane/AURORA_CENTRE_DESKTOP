@@ -58,6 +58,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.FileChooser;
 import javafx.stage.Modality;
@@ -117,7 +118,7 @@ public class AfficheUsersController implements Initializable {
     @FXML
     private ComboBox comboBox;
     @FXML
-    private Button btnSavePdf;
+    private Button btnChart;
     /**
      * Initializes the controller class.
      */
@@ -351,7 +352,6 @@ public class AfficheUsersController implements Initializable {
         
     }
 
-    @FXML
     private void handleSaveFilee(ActionEvent event) {
         Stage secondaryStage = new Stage () ;
         FileChooser fileChooser = new FileChooser ();
@@ -421,7 +421,7 @@ public class AfficheUsersController implements Initializable {
         doc.add(new Paragraph("\n"));
         doc.add(new Paragraph("All users information in this table :"+"\n"));
          doc.add(new Paragraph("\n"));
-         PdfPTable t = new PdfPTable(5);
+         PdfPTable t = new PdfPTable(6);
          // Set the total width of the table to the width of the page
             t.setTotalWidth(doc.getPageSize().getWidth() - doc.leftMargin() - doc.rightMargin());
          
@@ -445,6 +445,10 @@ public class AfficheUsersController implements Initializable {
         cell4.setBackgroundColor(BaseColor.PINK); // set the background color of the cell
         t.addCell(cell4);
         
+        PdfPCell cell5 = new PdfPCell(new Phrase("Etat"));
+        cell5.setBackgroundColor(BaseColor.PINK); // set the background color of the cell
+        t.addCell(cell5);
+        
          
            for (User user: userList) {
                 t.addCell(user.getUserName());
@@ -452,6 +456,7 @@ public class AfficheUsersController implements Initializable {
                 t.addCell(user.getFullAddress());
                 t.addCell(user.getNumTel());
                 t.addCell(user.getIsVerified());
+                t.addCell(user.getEtat().getText());
                 }
            doc.add(t);
         Desktop.getDesktop().open(new File("User_list.pdf"));
@@ -655,6 +660,21 @@ public class AfficheUsersController implements Initializable {
                 }
         }
         
+    }
+
+    @FXML
+    private void handleChart(ActionEvent event) throws IOException {
+         // Load the FXML file for the new stage
+                Parent root = FXMLLoader.load(getClass().getResource("Chart.fxml"));
+                // Create the new stage
+                Stage newStage = new Stage();
+                // Set the title of the new stage
+                newStage.setTitle("BarChart");
+                // Create the scene for the new stage
+                Scene scene = new Scene(root);
+                newStage.setScene(scene);
+                // Show the new stage
+                newStage.show();
     }
 
     
