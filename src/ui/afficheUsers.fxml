@@ -51,7 +51,15 @@
                         <Insets left="20.0" right="170.0" />
                      </HBox.margin>
                   </TextField>
-                  <Button fx:id="btnSave" mnemonicParsing="false" onAction="#handleSaveFile" prefHeight="34.0" prefWidth="50.0" styleClass="pink1-btn">
+                  <Button fx:id="btnChart" mnemonicParsing="false" onAction="#handleChart" prefHeight="34.0" prefWidth="55.0" styleClass="pink1-btn">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="BAR_CHART_ALT" size="20" wrappingWidth="17.48578643798828" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnSave" mnemonicParsing="false" onAction="#handleSaveFile" prefHeight="34.0" prefWidth="55.0" styleClass="pink1-btn">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
