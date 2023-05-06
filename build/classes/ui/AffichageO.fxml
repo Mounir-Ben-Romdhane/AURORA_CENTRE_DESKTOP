@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="489.0" prefWidth="532.0" styleClass="mainFxmlClass" stylesheets="@styleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.AffichageOController">
+   <children>
+      <Label fx:id="descriptionProduit" layoutX="46.0" layoutY="159.0" prefHeight="75.0" prefWidth="287.0" text="Label" />
+      <Label fx:id="nomProduit" layoutX="162.0" layoutY="241.0" text="Label" />
+      <Label fx:id="prixProduit" layoutX="162.0" layoutY="283.0" text="Label" />
+      <ImageView fx:id="imageProduit" fitHeight="150.0" fitWidth="325.0" layoutX="29.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="commanderButton" layoutX="29.0" layoutY="321.0" mnemonicParsing="false" onAction="#commanderProduit" styleClass="pink1-btn" stylesheets="@styleSheet.css" text="order" />
+      <Button fx:id="annulerButton" layoutX="310.0" layoutY="247.0" mnemonicParsing="false" styleClass="pink1-btn" stylesheets="@styleSheet.css" text="delete" />
+      <TextField fx:id="idProduit" layoutX="322.0" layoutY="306.0" prefHeight="26.0" prefWidth="43.0" />
+      <TextField fx:id="quantityTf" layoutX="141.0" layoutY="321.0" prefHeight="31.0" prefWidth="78.0" promptText="Quantity" />
+      <Label layoutX="46.0" layoutY="159.0" text="Description">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="162.0" layoutY="217.0" prefHeight="18.0" prefWidth="70.0" text="Name">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="162.0" layoutY="264.0" text="Price">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

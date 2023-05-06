@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="538.0" prefWidth="1203.0" styleClass="white-pane" stylesheets="@styleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.EvenementController">
+   <children>
+      <VBox fx:id="vBoxDashboardClient" layoutX="21.0" layoutY="207.0" prefHeight="296.0" prefWidth="1155.0" styleClass="white-pane">
+         <children>
+            <TableView fx:id="evenementTv" onMouseClicked="#choisirEvent" prefHeight="298.0" prefWidth="1155.0">
+               <columns>
+                  <TableColumn fx:id="titreevT" prefWidth="157.60000610351562" text="TITRE" />
+                  <TableColumn fx:id="descriptionevT" prefWidth="340.8000030517578" text="DESCRIPTION" />
+                  <TableColumn fx:id="imageevT" prefWidth="186.4000244140625" text="IMAGE" />
+                  <TableColumn fx:id="dateevT" prefWidth="234.39996337890625" text="DATE " />
+                  <TableColumn fx:id="typeevT" prefWidth="235.199951171875" text="TYPE" />
+               </columns>
+            </TableView>
+         </children>
+      </VBox>
+      <Label layoutX="41.0" layoutY="29.0" text="Title" />
+      <Label layoutX="290.0" layoutY="26.0" text="Description" />
+      <Label layoutX="36.0" layoutY="125.0" text="Image" />
+      <Label layoutX="549.0" layoutY="29.0" text="Date" />
+      <Label layoutX="798.0" layoutY="26.0" text="Type" />
+      <TextField fx:id="titreevF" layoutX="92.0" layoutY="25.0" styleClass="searchh" />
+      <TextField fx:id="descriptionevF" layoutX="360.0" layoutY="22.0" styleClass="searchh" />
+      <TextField fx:id="imageevF" layoutX="92.0" layoutY="121.0" prefHeight="25.0" prefWidth="149.0" styleClass="searchh" />
+      <DatePicker fx:id="dateevF" layoutX="601.0" layoutY="25.0" prefHeight="25.0" prefWidth="149.0" styleClass="searchhh" />
+      <Button layoutX="690.0" layoutY="175.0" mnemonicParsing="false" onAction="#ajouterev" styleClass="pink1-btn" text="add" />
+      <Button layoutX="763.0" layoutY="175.0" mnemonicParsing="false" onAction="#modifierev" styleClass="pink1-btn" text="modify" />
+      <Button layoutX="840.0" layoutY="175.0" mnemonicParsing="false" onAction="#supprimerev" styleClass="pink1-btn" text="delete" />
+      <TextField fx:id="idmodifierField" layoutX="952.0" layoutY="173.0" prefHeight="26.0" prefWidth="224.0" styleClass="searchh" />
+      <Button layoutX="252.0" layoutY="121.0" mnemonicParsing="false" onAction="#uploadImage" prefHeight="25.0" prefWidth="83.0" styleClass="pink1-btn" text="Upload" />
+      <ImageView fx:id="imageview1" fitHeight="133.0" fitWidth="257.0" layoutX="395.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true" />
+      <ChoiceBox fx:id="typeevF" layoutX="851.0" layoutY="22.0" prefWidth="150.0" styleClass="searchhh" />
+      <Button fx:id="statistique" layoutX="31.0" layoutY="507.0" mnemonicParsing="false" onAction="#statistique" styleClass="pink1-btn" text="Statistics" AnchorPane.topAnchor="507.0" />
+   </children>
+</AnchorPane>

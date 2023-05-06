@@ -187,6 +187,11 @@ public class SignInController implements Initializable {
                             lbPasswordSignIn.setTextFill(Color.BLACK);
                                */
             }else if(ps.SignInUser(tfEmailSignIn.getText(), tfPasswordSignIn.getText())=="trueUser"){
+                
+                            //Close current stage
+                            Stage currentStage = (Stage) btnSignIn.getScene().getWindow();
+                            currentStage.close();
+                
                             Stage stage = new Stage();
                             FXMLLoader loader = new FXMLLoader(getClass().getResource("DashboardClient.fxml"));
 
@@ -206,7 +211,7 @@ public class SignInController implements Initializable {
                             }
                             ps.rememberMe(tfEmailSignIn.getText(), i);
                             new BounceIn(root).play();
-                           // tfEmailSignIn.setText("");
+                            // tfEmailSignIn.setText("");
                             //tfPasswordSignIn.setText("");
             }
             else if(ps.SignInUser(tfEmailSignIn.getText(), tfPasswordSignIn.getText())=="false"){

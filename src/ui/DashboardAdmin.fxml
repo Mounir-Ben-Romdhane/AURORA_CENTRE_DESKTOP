@@ -26,7 +26,7 @@
                   <Insets bottom="130.0" />
                </VBox.margin>
             </Pane>
-            <Button fx:id="btnHome" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="269.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="52.0" prefWidth="294.0" styleClass="pink-btn" text="Home">
+            <Button fx:id="btnHome" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="269.0" minHeight="18.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="34.0" prefWidth="294.0" styleClass="pink-btn" text="Home">
                <padding>
                   <Insets left="50.0" />
                </padding>
@@ -40,7 +40,7 @@
                   <FontAwesomeIconView fill="WHITE" glyphName="HOME" layoutX="35.0" layoutY="30.0" size="20" />
                </graphic>
             </Button>
-            <Button fx:id="btnAddUser" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="52.0" prefWidth="294.0" styleClass="pink-btn" text="Add User">
+            <Button fx:id="btnAddUser" alignment="BASELINE_LEFT" graphicTextGap="10.0" minHeight="18.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="34.0" prefWidth="294.0" styleClass="pink-btn" text="Add User">
                <padding>
                   <Insets left="50.0" />
                </padding>
@@ -51,7 +51,7 @@
                   <FontAwesomeIconView fill="WHITE" glyphName="USER_PLUS" size="20" />
                </graphic>
             </Button>
-            <Button fx:id="btnListUsers" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="49.0" prefWidth="294.0" styleClass="pink-btn" text="List Users">
+            <Button fx:id="btnListUsers" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="34.0" prefWidth="294.0" styleClass="pink-btn" text="Users">
                <padding>
                   <Insets left="50.0" />
                </padding>
@@ -62,7 +62,117 @@
                   <FontAwesomeIconView fill="WHITE" glyphName="GROUP" size="20" />
                </graphic>
             </Button>
-            <Button fx:id="btnProfil" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="53.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="49.0" prefWidth="294.0" styleClass="pink-btn" text="Profil">
+            <Button fx:id="btnproduit" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="271.0" minHeight="18.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="34.0" prefWidth="294.0" styleClass="pink-btn" text="Add Product">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="PLUS_CIRCLE" layoutX="35.0" layoutY="30.0" size="20" />
+               </graphic>
+            </Button>
+            <Button fx:id="btnCommande" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="379.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="34.0" prefWidth="294.0" styleClass="pink-btn" text="Products">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="SHOPPING_BAG" size="20" />
+               </graphic>
+            </Button>
+            <Button fx:id="btnAddService" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="34.0" prefWidth="294.0" styleClass="pink-btn" text="Add Service">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="PLUS" size="20" />
+               </graphic>
+            </Button>
+            <Button fx:id="btnListServices" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="34.0" prefWidth="294.0" styleClass="pink-btn" text="Services">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="SERVER" size="20" />
+               </graphic>
+            </Button>
+            <Button fx:id="btnListReservations" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="34.0" prefWidth="294.0" styleClass="pink-btn" text="Reservations">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="CALENDAR_CHECK_ALT" size="20" />
+               </graphic>
+            </Button>
+            <Button fx:id="btnEvenementCruds" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="34.0" prefWidth="294.0" styleClass="pink-btn" text="Events">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="CONNECTDEVELOP" size="20" />
+               </graphic>
+            </Button>
+            <Button fx:id="btnParticipations" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="34.0" prefWidth="294.0" styleClass="pink-btn" text="Participations">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="HAND_PAPER_ALT" size="20" />
+               </graphic>
+            </Button>
+            <Button fx:id="btnreclamation" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="660.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="34.0" prefWidth="294.0" styleClass="pink-btn" text="Reclamations">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="TIMES_RECTANGLE_ALT" size="20" />
+               </graphic>
+            </Button>
+            <Button fx:id="btnfactureback" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="34.0" prefWidth="294.0" styleClass="pink-btn" text="Factures">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="CREDIT_CARD_ALT" size="20" text="" />
+               </graphic>
+            </Button>
+            <Button fx:id="btncommande" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="34.0" prefWidth="303.0" styleClass="pink-btn" text="Commandes ">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="DOLLAR" size="20" />
+               </graphic>
+            </Button>
+            <Button fx:id="btnProfil" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="53.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="34.0" prefWidth="294.0" styleClass="pink-btn" text="Profil">
                <padding>
                   <Insets left="50.0" />
                </padding>
@@ -73,7 +183,7 @@
                   <FontAwesomeIconView fill="WHITE" glyphName="USER" size="20" />
                </graphic>
             </Button>
-            <Button fx:id="btnLogOut" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleLogOut" prefHeight="48.0" prefWidth="294.0" styleClass="pink-btn" text="LOG OUT">
+            <Button fx:id="btnLogOut" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleLogOut" prefHeight="34.0" prefWidth="294.0" styleClass="pink-btn" text="LOG OUT">
                <padding>
                   <Insets left="50.0" />
                </padding>
@@ -88,7 +198,7 @@
       </VBox>
       <Pane fx:id="pnlStatus" layoutX="294.0" layoutY="134.0" prefHeight="134.0" prefWidth="1245.0" style="-fx-background-color: #fca5a5;" AnchorPane.bottomAnchor="582.0" AnchorPane.leftAnchor="294.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="134.0">
          <children>
-            <Label fx:id="lplStatus" layoutX="21.0" layoutY="41.0" prefHeight="66.0" prefWidth="368.0" text="HOME" textFill="WHITE">
+            <Label fx:id="lplStatus" layoutX="44.0" layoutY="54.0" prefHeight="66.0" prefWidth="368.0" text="HOME" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="36.0" />
                </font>

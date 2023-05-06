@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black; -fx-border-color: #bc9f1e; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.Quiz_evenementController">
+   <children>
+      <Label layoutX="41.0" layoutY="20.0" text="Quiz  Sonothérapie" textFill="#bc9f1e" />
+      <Label layoutX="40.0" layoutY="70.0" text="1 - Qu'est-ce que la sonothérapie?" textFill="#bc9f1e" />
+      <RadioButton fx:id="q1a1" layoutX="40.0" layoutY="100.0" prefHeight="17.0" prefWidth="497.0" text="Une pratique thérapeutique qui utilise des sons et des vibrations pour améliorer la santé" textFill="#bc9f1e" />
+      <RadioButton fx:id="q1a2" layoutX="40.0" layoutY="130.0" text="Une technique de respiration profonde pour réduire le stress" textFill="#bc9f1e" />
+      <RadioButton fx:id="q1a3" layoutX="40.0" layoutY="160.0" text="Une pratique médicale basée sur l'utilisation de la lumière" textFill="#bc9f1e" />
+      <Label layoutX="40.0" layoutY="200.0" text="2 - Quel est l'objectif principal de la sonothérapie?" textFill="#bc9f1e" />
+      <RadioButton fx:id="q2a1" layoutX="40.0" layoutY="250.0" text="Améliorer la mémoire" textFill="#bc9f1e" />
+      <RadioButton fx:id="q2a2" layoutX="40.0" layoutY="280.0" text="Améliorer la santé physique, émotionnelle et spirituelle" textFill="#bc9f1e" />
+      <RadioButton fx:id="q2a3" layoutX="40.0" layoutY="310.0" text="Améliorer la vision" textFill="#bc9f1e" />
+      <Button fx:id="submitQuiz" layoutX="267.0" layoutY="359.0" mnemonicParsing="false" onAction="#submitQuiz" style="-fx-background-color: black; -fx-border-color: #bc9f1e;" text="Soumettre" textFill="#bc9f1e" />
+      <Label fx:id="scoreLabel" layoutX="453.0" layoutY="20.0" text="Score: 0/2" textFill="#bc9f1e" />
+      <ImageView fitHeight="67.0" fitWidth="99.0" layoutX="426.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../téléchargement%20(2).jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="109.0" fitWidth="156.0" layoutX="436.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../téléchargement%20(1).jpeg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

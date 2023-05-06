@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="538.0" prefWidth="1203.0" styleClass="white-pane" stylesheets="@styleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.AfficherParticipationController">
+   <children>
+      <VBox fx:id="vBoxDashboardAdmin" layoutX="39.0" layoutY="46.0" prefHeight="478.0" prefWidth="1154.0" styleClass="white-pane">
+         <children>
+            <TableView fx:id="TableViewP" onMouseClicked="#choisirEvent" prefHeight="495.0" prefWidth="1154.0">
+               <columns>
+                  <TableColumn fx:id="idpC" prefWidth="109.0" text="EVENEMENT_ID" />
+                  <TableColumn fx:id="description_pnC" prefWidth="301.6000061035156" text="DESCRIPTION" />
+                  <TableColumn fx:id="usernameevC" prefWidth="203.20001220703125" text="USERNAME" />
+                  <TableColumn fx:id="emailevC" prefWidth="244.79998779296875" text="EMAIL" />
+                  <TableColumn fx:id="numtelevC" minWidth="0.0" prefWidth="191.99993896484375" text="PHONE" />
+                  <TableColumn fx:id="qr_code" maxWidth="388.8000244140626" prefWidth="104.7999267578125" text="QrCode" />
+               </columns>
+            </TableView>
+         </children>
+      </VBox>
+      <Button fx:id="createpdf" layoutX="1104.0" layoutY="14.0" mnemonicParsing="false" onAction="#createpdf" prefHeight="26.0" prefWidth="69.0" styleClass="pink1-btn" text="PDF" />
+   </children>
+</AnchorPane>

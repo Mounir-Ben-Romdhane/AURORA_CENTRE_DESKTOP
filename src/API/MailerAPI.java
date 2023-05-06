@@ -18,7 +18,7 @@ import javax.mail.Authenticator;
 
 public class MailerAPI {
     
-    public static void sendEmail(String s) {
+    public static void sendEmail(String s,String obj,String body) {
         
 
       final String username = "98bfd03fd80444";
@@ -44,8 +44,8 @@ public class MailerAPI {
          Message message = new MimeMessage(session);
          message.setFrom(new InternetAddress(username));
          message.setRecipients(Message.RecipientType.TO,InternetAddress.parse(s));
-         message.setSubject("Sign Up successfully");
-         message.setText("thank's for sign up in our application ! You are welcome hope you enjoy with us !");
+         message.setSubject(obj);
+         message.setText(body);
 
          Transport.send(message);
 

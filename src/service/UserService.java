@@ -90,7 +90,7 @@ public class UserService implements IService<User> {
                     pst.setString(5, p.getFullAddress());
                     pst.executeUpdate();
                     res1=true;
-                    MailerAPI.sendEmail(p.getEmail().toString());
+                    MailerAPI.sendEmail(p.getEmail().toString(),"Sign Up successfully","thank's for sign up in our application ! You are welcome hope you enjoy with us !");
             }else{
                 while (resultSet1.next()) {
                     

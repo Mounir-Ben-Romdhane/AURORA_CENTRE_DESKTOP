@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="390.0" prefWidth="394.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.AffichageController">
+    <stylesheets>
+        <URL value="@affichage.css" />
+    </stylesheets>
+   <children>
+      <Label fx:id="titreEventLabel" layoutX="29.0" layoutY="195.0" text="Label" />
+      <Label fx:id="typeEventLabel" layoutX="29.0" layoutY="228.0" text="Label" />
+      <Label fx:id="dateEventLabel" layoutX="29.0" layoutY="258.0" text="Label" />
+      <Label fx:id="descriptionEventLabel" layoutX="29.0" layoutY="295.0" text="Label" />
+      <ImageView fx:id="imageview" fitHeight="150.0" fitWidth="200.0" layoutX="29.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="participerEventButton" layoutX="29.0" layoutY="321.0" mnemonicParsing="false" onAction="#participerEvent" styleClass="pink1-btn" stylesheets="@styleSheet.css" text="Participate" />
+      <Button fx:id="annulerButton" layoutX="249.0" layoutY="321.0" mnemonicParsing="false" styleClass="pink1-btn" stylesheets="@styleSheet.css" text="annuler" />
+      <TextField fx:id="ideventF" layoutX="110.0" layoutY="321.0" prefHeight="26.0" prefWidth="43.0" />
+      <TextField fx:id="iduserF" layoutX="158.0" layoutY="321.0" prefHeight="6.0" prefWidth="28.0" />
+      <TextField fx:id="idPartField" layoutX="193.0" layoutY="321.0" prefHeight="26.0" prefWidth="43.0" />
+   </children>
+</AnchorPane>

@@ -40,6 +40,105 @@
                   <FontAwesomeIconView fill="WHITE" glyphName="HOME" layoutX="35.0" layoutY="30.0" size="20" />
                </graphic>
             </Button>
+            <Button fx:id="btnProduit" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="426.0" mnemonicParsing="false" onAction="#handleClicksClient" prefHeight="52.0" prefWidth="294.0" styleClass="pink-btn" text="Produits">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="USER_PLUS" size="20" />
+               </graphic>
+            </Button>
+            <Button fx:id="btnService" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="327.0" mnemonicParsing="false" onAction="#handleClicksClient" prefHeight="49.0" prefWidth="294.0" styleClass="pink-btn" text="Services">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="CALENDAR" size="20" />
+               </graphic>
+            </Button>
+            <Button fx:id="btnEvent" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="327.0" mnemonicParsing="false" onAction="#handleClicksClient" prefHeight="49.0" prefWidth="294.0" styleClass="pink-btn" text="Evenements">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="CALENDAR_PLUS_ALT" size="20" text="" />
+               </graphic>
+            </Button>
+            <Button fx:id="btnListReservationsClient" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClicksClient" prefHeight="52.0" prefWidth="294.0" styleClass="pink-btn" text="List Réservations">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="USER_PLUS" size="20" />
+               </graphic>
+            </Button>
+            <Button fx:id="btnParticiper" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="275.0" mnemonicParsing="false" onAction="#handleClicksClient" prefHeight="52.0" prefWidth="294.0" styleClass="pink-btn" text="Liste Participations">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="HOME" layoutX="35.0" layoutY="30.0" size="20" />
+               </graphic>
+            </Button>
+            <Button fx:id="btnAjoutRec" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="426.0" mnemonicParsing="false" onAction="#handleClicksClient" prefHeight="52.0" prefWidth="294.0" styleClass="pink-btn" text="Ajout Reclamation">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="USER_PLUS" size="20" />
+               </graphic>
+            </Button>
+            <Button fx:id="btnListRec" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="576.0" mnemonicParsing="false" onAction="#handleClicksClient" prefHeight="52.0" prefWidth="294.0" styleClass="pink-btn" text="List Reclamations">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="USER_PLUS" size="20" />
+               </graphic>
+            </Button>
+            <Button fx:id="btncommandee" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClicksClient" prefHeight="49.0" prefWidth="294.0" styleClass="pink-btn" text="Liste des commandes">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="SHOPPING_CART" size="20" />
+               </graphic>
+            </Button>
+            <Button fx:id="btnfacture" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClicksClient" prefHeight="49.0" prefWidth="294.0" styleClass="pink-btn" text="liste des factures">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="MONEY" size="20" />
+               </graphic>
+            </Button>
             <Button fx:id="btnProfilClient" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="53.0" mnemonicParsing="false" onAction="#handleClicksClient" prefHeight="49.0" prefWidth="294.0" styleClass="pink-btn" text="Profil">
                <padding>
                   <Insets left="50.0" />
