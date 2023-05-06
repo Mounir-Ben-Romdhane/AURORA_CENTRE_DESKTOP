@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="1200.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.menuController">
+   <children>
+      <VBox layoutX="-10.0" prefHeight="1208.0" prefWidth="258.0" style="-fx-background-color: #15616D;">
+         <children>
+            <Label layoutX="10.0" layoutY="93.0" prefHeight="2.0" prefWidth="258.0" style="-fx-background-color: ECE5D9;" textFill="WHITE" />
+            <Button fx:id="btnService" mnemonicParsing="false" onMouseClicked="#handleButtonService" prefHeight="83.0" prefWidth="260.0" style="-fx-background-color: #15616D;" text="Gestion de Service" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="10.0" layoutY="10.0" prefHeight="21.0" prefWidth="258.0" style="-fx-background-color: ECE5D9;" textFill="WHITE" />
+            <Button fx:id="btnReservation" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#handleButtonReservation" prefHeight="83.0" prefWidth="260.0" style="-fx-background-color: #15616D;" text="Gestion de Réservation" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="120.0" layoutY="270.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="120.0" fitWidth="150.0" layoutX="-52.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Images/JavaFx/logoCenter-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="1200.0" fitWidth="1000.0" layoutX="248.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Images/JavaFx/back.PNG" />
+         </image>
+      </ImageView>
+      <Label layoutX="466.0" layoutY="222.0" text="Welcome to AURORA.">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <VBox layoutX="248.0" layoutY="1112.0" prefHeight="96.0" prefWidth="1000.0" style="-fx-background-color: #15616D;" />
+      <ImageView fitHeight="538.0" fitWidth="1000.0" layoutX="248.0" layoutY="563.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Images/JavaFx/back.PNG" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

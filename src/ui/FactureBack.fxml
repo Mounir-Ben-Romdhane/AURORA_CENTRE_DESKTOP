@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="538.0" prefWidth="1203.0" styleClass="mainFxmlClass" stylesheets="@styleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.FactureBackController">
+   <children>
+      <Button fx:id="pdff" layoutX="125.0" layoutY="442.0" mnemonicParsing="false" onAction="#printPdf" prefHeight="31.0" prefWidth="114.0" styleClass="pink1-btn" text="Print PDF " />
+      <Button fx:id="supprimerbtn" layoutX="906.0" layoutY="442.0" mnemonicParsing="false" onAction="#supprimerButton" prefHeight="31.0" prefWidth="128.0" styleClass="pink1-btn" text="Delete" />
+      <Button fx:id="exportfac" layoutX="460.0" layoutY="442.0" mnemonicParsing="false" onAction="#exportfact" prefHeight="31.0" prefWidth="128.0" styleClass="pink1-btn" text="Export Excel " />
+      <TableView fx:id="tabfac" layoutX="14.0" layoutY="18.0" prefHeight="408.0" prefWidth="1175.0">
+        <columns>
+            <TableColumn fx:id="datefac" prefWidth="348.0" text="Date of order" />
+            <TableColumn fx:id="estsup" prefWidth="356.0" text="est_sup" />
+          <TableColumn fx:id="commandefac" prefWidth="386.0" text="Order_id" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

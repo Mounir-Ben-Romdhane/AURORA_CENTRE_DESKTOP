@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="390.0" prefWidth="394.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.AffichageDetailsController">
+   <stylesheets>
+      <URL value="@affichage.css" />
+   </stylesheets>
+   <children>
+      <Label fx:id="nomProduit" layoutX="26.0" layoutY="58.0" prefHeight="40.0" prefWidth="236.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="prixProduit" layoutX="31.0" layoutY="127.0" prefHeight="40.0" prefWidth="243.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Button fx:id="modifierButton" layoutX="29.0" layoutY="335.0" mnemonicParsing="false" onAction="#modifierOrder" styleClass="pink1-btn" stylesheets="@styleSheet.css" text="modify" />
+      <Button fx:id="supprimerButton" layoutX="148.0" layoutY="335.0" mnemonicParsing="false" onAction="#supprimerOrder" styleClass="pink1-btn" stylesheets="@styleSheet.css" text="delete" />
+      <TextField fx:id="idOrder" layoutX="105.0" layoutY="335.0" prefHeight="26.0" prefWidth="43.0" />
+      <Label fx:id="ProduitQuantity" layoutX="26.0" layoutY="200.0" prefHeight="40.0" prefWidth="243.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="ProduitTotale" layoutX="31.0" layoutY="271.0" prefHeight="40.0" prefWidth="243.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateOrder" layoutX="192.0" layoutY="167.0" prefHeight="40.0" prefWidth="175.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="genererFacturebtn" layoutX="272.0" layoutY="335.0" mnemonicParsing="false" onAction="#genererFacture" styleClass="pink1-btn" stylesheets="@styleSheet.css" text="generate bill" />
+      <Label layoutX="31.0" layoutY="25.0" text="Reference">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="98.0" prefHeight="26.0" prefWidth="54.0" text="Price">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="174.0" prefHeight="7.0" prefWidth="71.0" text="Quantity">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="245.0" text="Total">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="192.0" layoutY="138.0" text="Date order">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

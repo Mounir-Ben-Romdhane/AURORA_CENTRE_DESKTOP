@@ -21,6 +21,19 @@
     -fx-text-fill:white;
 }
 
+.searchh{
+    -fx-border-radius: 20px;
+    -fx-border-width:2px;
+    -fx-background-color:white;
+    -fx-border-color: #fca5a5;
+}
+
+.searchhh{
+    -fx-border-width:2px;
+    -fx-background-color:white;
+    -fx-border-color: #fca5a5;
+}
+
 .trans-btn-white-border:hover{
     -fx-background-color:#fca5a5;
     -fx-background-radius:10px;

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="1200.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ServiceBackController">
+   <children>
+      <TableView fx:id="tvService" layoutX="22.0" layoutY="266.0" prefHeight="559.0" prefWidth="1165.0">
+        <columns>
+          <TableColumn fx:id="colTitre" prefWidth="246.0" text="Titre" />
+            <TableColumn fx:id="colDes" prefWidth="180.0" text="Description" />
+            <TableColumn fx:id="colType" prefWidth="184.0" text="Type" />
+            <TableColumn fx:id="colDate" prefWidth="230.0" text="Date" />
+            <TableColumn fx:id="colImage" prefWidth="324.0" text="Image" />
+        </columns>
+      </TableView>
+      <Label layoutX="481.0" layoutY="24.0" text="Gestion de service" textFill="#1a8c94">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnAdd" layoutX="563.0" layoutY="124.0" mnemonicParsing="false" onMouseClicked="#handleButtonAjout" text="Ajouter" textFill="#4032b9">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="btnModif" layoutX="559.0" layoutY="171.0" mnemonicParsing="false" onMouseClicked="#handleButtonUpdate" text="Modifier" textFill="#199a46">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="btnDel" layoutX="553.0" layoutY="215.0" mnemonicParsing="false" onMouseClicked="#handleButtonDel" text="Supprimer" textFill="#a82323">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <AnchorPane layoutX="-2.0" layoutY="-72.0" prefHeight="128.0" prefWidth="1216.0" style="-fx-background-color: #7FACC2;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-29.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+            <Label alignment="CENTER" layoutX="441.0" layoutY="91.0" text="Gestion Service" textFill="#1f266b">
+               <font>
+                  <Font name="Calibri Bold" size="40.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnRetour" layoutX="65.0" layoutY="98.0" mnemonicParsing="false" onMouseClicked="#handleBtnRetour" style="-fx-background-color: #ffffff;" text="Retour">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="120.0" fitWidth="136.0" layoutX="58.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Images/JavaFx/logoCenter-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="filterField" layoutX="1013.0" layoutY="139.0" onMouseClicked="#search_service" promptText="RECHERCHER" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="1000.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ModifierServiceController">
+   <children>
+      <TextField fx:id="titreS" layoutX="450.0" layoutY="226.0" prefHeight="42.0" prefWidth="341.0" />
+      <TextField fx:id="ImageS" layoutX="450.0" layoutY="639.0" prefHeight="40.0" prefWidth="341.0" />
+      <ChoiceBox fx:id="typeS" layoutX="450.0" layoutY="468.0" prefHeight="31.0" prefWidth="341.0" />
+      <Label layoutX="602.0" layoutY="188.0" text="Titre :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="602.0" layoutY="435.0" text="Type :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="602.0" layoutY="526.0" text="Date :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="579.0" layoutY="278.0" text="Description :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="602.0" layoutY="608.0" text="Image :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <DatePicker fx:id="dateS" layoutX="450.0" layoutY="557.0" prefHeight="40.0" prefWidth="341.0" />
+      <TextField fx:id="dascriptionS" layoutX="450.0" layoutY="305.0" prefHeight="110.0" prefWidth="341.0" />
+      <Button fx:id="btnModifierS" layoutX="566.0" layoutY="748.0" mnemonicParsing="false" onAction="#modifier" prefHeight="42.0" prefWidth="121.0" style="-fx-background-color: #000099;" text="Modifier " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="btnImage" layoutX="451.0" layoutY="671.0" mnemonicParsing="false" onMouseClicked="#chooseFile" prefHeight="31.0" prefWidth="341.0" text="Image" />
+      <AnchorPane layoutX="-2.0" layoutY="-47.0" prefHeight="164.0" prefWidth="1218.0" style="-fx-background-color: #7FACC2;">
+         <children>
+            <Label alignment="CENTER" layoutX="503.0" layoutY="87.0" text="Modifier Service" textFill="#1f266b">
+               <font>
+                  <Font name="Calibri Bold" size="40.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-29.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="btnRetour" layoutX="62.0" layoutY="94.0" mnemonicParsing="false" onMouseClicked="#handleBtnRetour" text="Retour">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="120.0" fitWidth="136.0" layoutX="1047.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Images/JavaFx/logoCenter-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="408.0" layoutY="210.0" prefHeight="495.0" prefWidth="6.0" style="-fx-background-color: #7FACC2;" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="1200.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AjouterServiceController">
+   <children>
+      <TextField fx:id="titreS" layoutX="341.0" layoutY="215.0" prefHeight="42.0" prefWidth="341.0" />
+      <TextField fx:id="imageS" layoutX="341.0" layoutY="628.0" prefHeight="40.0" prefWidth="341.0" />
+      <ChoiceBox fx:id="typeS" layoutX="341.0" layoutY="457.0" prefHeight="31.0" prefWidth="341.0" />
+      <Label layoutX="493.0" layoutY="177.0" text="Titre :">
+         <font>
+            <Font name="Calibri Bold" size="17.0" />
+         </font></Label>
+      <Label layoutX="493.0" layoutY="424.0" text="Type :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="493.0" layoutY="515.0" text="Date :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="470.0" layoutY="267.0" text="Description :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <Label layoutX="493.0" layoutY="597.0" text="Image :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Button fx:id="btnAjoutS" layoutX="451.0" layoutY="741.0" mnemonicParsing="false" onMouseClicked="#ajouter" prefHeight="42.0" prefWidth="121.0" style="-fx-background-color: #928524;" text="Ajouter sevice" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <DatePicker fx:id="dateS" layoutX="341.0" layoutY="546.0" prefHeight="40.0" prefWidth="341.0" />
+      <TextField fx:id="dascriptionS" layoutX="341.0" layoutY="299.0" prefHeight="110.0" prefWidth="341.0" />
+      <AnchorPane layoutY="-57.0" prefHeight="164.0" prefWidth="1007.0" style="-fx-background-color: #7FACC2;">
+         <children>
+            <Label alignment="CENTER" layoutX="387.0" layoutY="89.0" text="Ajouter Service" textFill="#1f266b">
+               <font>
+                  <Font name="Calibri Bold" size="40.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-29.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="btnRetour" layoutX="46.0" layoutY="89.0" mnemonicParsing="false" onMouseClicked="#handleBtnRetour" style="-fx-background-color: #ffffff;" text="Retour">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="120.0" fitWidth="136.0" layoutX="814.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Images/JavaFx/logoCenter-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="289.0" layoutY="210.0" prefHeight="495.0" prefWidth="6.0" style="-fx-background-color: #7FACC2;" />
+      <Button fx:id="btnImage" layoutX="341.0" layoutY="668.0" mnemonicParsing="false" onMouseClicked="#chooseFile" prefHeight="31.0" prefWidth="341.0" text="Ajouter image" />
+      <ImageView fx:id="imageView" fitHeight="81.0" fitWidth="144.0" layoutX="742.0" layoutY="608.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

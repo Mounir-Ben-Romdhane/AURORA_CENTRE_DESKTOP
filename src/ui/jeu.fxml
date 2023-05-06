@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black; -fx-border-color: #bc9f1e; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.JeuController">
+   <children>
+      <FlowPane layoutX="184.0" layoutY="87.0" prefHeight="207.0" prefWidth="230.0">
+         <children>
+            <Button fx:id="button1" mnemonicParsing="false" prefHeight="69.0" prefWidth="76.0" style="-fx-background-color: #bc9f1e; -fx-border-color: black;" />
+            <Button fx:id="button2" mnemonicParsing="false" prefHeight="69.0" prefWidth="76.0" style="-fx-background-color: #bc9f1e; -fx-border-color: black;" />
+            <Button fx:id="button3" mnemonicParsing="false" prefHeight="69.0" prefWidth="76.0" style="-fx-background-color: #bc9f1e; -fx-border-color: black;" />
+            <Button fx:id="button4" mnemonicParsing="false" prefHeight="69.0" prefWidth="76.0" style="-fx-background-color: #bc9f1e; -fx-border-color: black;" />
+            <Button fx:id="button5" mnemonicParsing="false" prefHeight="69.0" prefWidth="76.0" style="-fx-background-color: #bc9f1e; -fx-border-color: black;" />
+            <Button fx:id="button6" mnemonicParsing="false" prefHeight="69.0" prefWidth="76.0" style="-fx-background-color: #bc9f1e; -fx-border-color: black;" />
+            <Button fx:id="button7" mnemonicParsing="false" prefHeight="69.0" prefWidth="76.0" style="-fx-background-color: #bc9f1e; -fx-border-color: black;" />
+            <Button fx:id="button8" mnemonicParsing="false" prefHeight="69.0" prefWidth="76.0" style="-fx-background-color: #bc9f1e; -fx-border-color: black;" />
+            <Button fx:id="button9" mnemonicParsing="false" prefHeight="69.0" prefWidth="76.0" style="-fx-background-color: #bc9f1e; -fx-border-color: black;" />
+         </children>
+      </FlowPane>
+      <Button layoutX="282.0" layoutY="334.0" mnemonicParsing="false" onAction="#restartGame" style="-fx-background-color: black; -fx-border-color: #bc9f1e;" text="Restart" textFill="#bc9f1e" />
+      <Text fx:id="winnerText" fill="WHITE" layoutX="239.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="      TIC TAC TOE" wrappingWidth="156.13671875" />
+      <Button fx:id="retour" layoutX="534.0" layoutY="359.0" mnemonicParsing="false" onAction="#retour" style="-fx-background-color: black; -fx-border-color: #bc9f1e;" text="Retour" textFill="#bc9f1e" />
+   </children>
+</AnchorPane>

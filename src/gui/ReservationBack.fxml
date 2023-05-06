@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ReservationBackController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="1200.0" prefWidth="1000.0">
+         <children>
+            <Label layoutX="481.0" layoutY="24.0" text="Gestion de réservation" textFill="#1a8c94">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnAdd" layoutX="562.0" layoutY="139.0" mnemonicParsing="false" onMouseClicked="#handleButtonAjout" text="Ajouter" textFill="#2214a1">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Button fx:id="btnModif" layoutX="558.0" layoutY="179.0" mnemonicParsing="false" onMouseClicked="#handleButtonModif" text="Modifier" textFill="#2aa849">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Button fx:id="btnDel" layoutX="552.0" layoutY="220.0" mnemonicParsing="false" onMouseClicked="#handleButtonDel" text="Supprimer" textFill="#c92d2d">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <TableView fx:id="tvReservation" layoutX="36.0" layoutY="305.0" prefHeight="471.0" prefWidth="1116.0">
+              <columns>
+                <TableColumn fx:id="colNumero" prefWidth="119.99996948242188" style="-fx-background-color: #efd6d2;" text="Numero" />
+                <TableColumn fx:id="colUserName" prefWidth="184.0" style="-fx-background-color: #efd6d2;" text="User Name" />
+                  <TableColumn fx:id="colEmail" prefWidth="236.0" style="-fx-background-color: #efd6d2;" text="Email" />
+                  <TableColumn fx:id="colNumeroTel" prefWidth="176.0" style="-fx-background-color: #efd6d2;" text="NumeroTel" />
+                  <TableColumn fx:id="colService_ID" prefWidth="182.0" style="-fx-background-color: #efd6d2;" text="Service_ID" />
+                  <TableColumn fx:id="colDate" prefWidth="217.0" style="-fx-background-color: #efd6d2;" text="Date" />
+              </columns>
+            </TableView>
+            <AnchorPane layoutX="-12.0" layoutY="-82.0" prefHeight="128.0" prefWidth="1216.0" style="-fx-background-color: #efd6d2;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-29.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label alignment="CENTER" layoutX="441.0" layoutY="91.0" text="Gestion Réservation" textFill="#d46d6d">
+                     <font>
+                        <Font name="Calibri Bold" size="40.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnRetour" layoutX="65.0" layoutY="98.0" mnemonicParsing="false" onMouseClicked="#handleBtnRetour" style="-fx-background-color: #ffffff;" text="Retour">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="120.0" fitWidth="136.0" layoutX="1013.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Images/JavaFx/logoCenter-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -60,6 +60,30 @@ public class DashboardAdminController implements Initializable {
     private Button btnHome;
     @FXML
     private VBox vBoxDashboardAdmin;
+    @FXML
+    private Button btnEvenementCruds;
+    @FXML
+    private Label hello1;
+    @FXML
+    private Button btnParticipations;
+    @FXML
+    private Button btnAddService;
+    @FXML
+    private Button btnListServices;
+    
+    @FXML
+    private Button btnListReservations;
+    @FXML
+    private Button btnCommande;
+    private Button test;
+    @FXML
+    private Button btnfactureback;
+    @FXML
+    private Button btncommande;
+    @FXML
+    private Button btnreclamation;
+    @FXML
+    private Button btnproduit;
     
 
     /**
@@ -108,7 +132,102 @@ public class DashboardAdminController implements Initializable {
             new Pulse(pnlStatus).play();
             vBoxDashboardAdmin.getChildren().removeAll();
             vBoxDashboardAdmin.setVisible(false);
+        }else if(event.getSource() == btnEvenementCruds){
+            lplStatusMini.setText("/Home/Evenements");
+            lplStatus.setText("Evenements");
+            vBoxDashboardAdmin.setVisible(true);
+            pnlStatus.setBackground(new Background(new BackgroundFill(Color.rgb(234, 102, 94),CornerRadii.EMPTY,Insets.EMPTY)));
+            new Shake(pnlStatus).play();
+            Parent fxml = FXMLLoader.load(getClass().getResource("Evenement.fxml"));
+                vBoxDashboardAdmin.getChildren().removeAll();
+                vBoxDashboardAdmin.getChildren().setAll(fxml);
+        }else if(event.getSource() == btnParticipations){
+            lplStatusMini.setText("/Home/Participations");
+            lplStatus.setText("List Participations");
+            vBoxDashboardAdmin.setVisible(true);
+            pnlStatus.setBackground(new Background(new BackgroundFill(Color.rgb(234, 102, 94),CornerRadii.EMPTY,Insets.EMPTY)));
+            new BounceIn(pnlStatus).play();
+            Parent fxml = FXMLLoader.load(getClass().getResource("AfficherParticipation.fxml"));
+                vBoxDashboardAdmin.getChildren().removeAll();
+                vBoxDashboardAdmin.getChildren().setAll(fxml);
+        }else if(event.getSource() == btnAddService){
+            lplStatusMini.setText("/Home/Ajouter Service");
+            lplStatus.setText("Ajouter Service");
+            vBoxDashboardAdmin.setVisible(true);
+            pnlStatus.setBackground(new Background(new BackgroundFill(Color.rgb(234, 102, 94),CornerRadii.EMPTY,Insets.EMPTY)));
+            new Swing(pnlStatus).play();
+            Parent fxml = FXMLLoader.load(getClass().getResource("AjouterService.fxml"));
+                vBoxDashboardAdmin.getChildren().removeAll();
+                vBoxDashboardAdmin.getChildren().setAll(fxml);
         }
+         else if(event.getSource() == btnListServices){
+            lplStatusMini.setText("/Home/Liste Services");
+            lplStatus.setText("Liste Services");
+            vBoxDashboardAdmin.setVisible(true);
+            pnlStatus.setBackground(new Background(new BackgroundFill(Color.rgb(234, 102, 94),CornerRadii.EMPTY,Insets.EMPTY)));
+            new Pulse(pnlStatus).play();
+            Parent fxml = FXMLLoader.load(getClass().getResource("AfficheServices.fxml"));
+                vBoxDashboardAdmin.getChildren().removeAll();
+                vBoxDashboardAdmin.getChildren().setAll(fxml);
+        }
+         else if(event.getSource() == btnListReservations){
+            lplStatusMini.setText("/Home/ Liste Réservations");
+            lplStatus.setText("Liste Réservations");
+            vBoxDashboardAdmin.setVisible(true);
+            pnlStatus.setBackground(new Background(new BackgroundFill(Color.rgb(234, 102, 94),CornerRadii.EMPTY,Insets.EMPTY)));
+            new Shake(pnlStatus).play();
+            Parent fxml = FXMLLoader.load(getClass().getResource("AfficheReservations.fxml"));
+                vBoxDashboardAdmin.getChildren().removeAll();
+                vBoxDashboardAdmin.getChildren().setAll(fxml);
+        }else if(event.getSource() == btnCommande){
+            lplStatusMini.setText("/Home/Products");
+            lplStatus.setText("Products");
+            vBoxDashboardAdmin.setVisible(true);
+            pnlStatus.setBackground(new Background(new BackgroundFill(Color.rgb(234, 102, 94),CornerRadii.EMPTY,Insets.EMPTY)));
+            new BounceIn(pnlStatus).play();
+            Parent fxml = FXMLLoader.load(getClass().getResource("Produit.fxml"));
+                vBoxDashboardAdmin.getChildren().removeAll();
+                vBoxDashboardAdmin.getChildren().setAll(fxml);
+        }
+        else if(event.getSource() == btnfactureback){
+            lplStatusMini.setText("/Facture");
+            lplStatus.setText("Facture");
+            vBoxDashboardAdmin.setVisible(true);
+            pnlStatus.setBackground(new Background(new BackgroundFill(Color.rgb(234, 102, 94),CornerRadii.EMPTY,Insets.EMPTY)));
+            new Swing(pnlStatus).play();
+            Parent fxml = FXMLLoader.load(getClass().getResource("FactureBack.fxml"));
+                vBoxDashboardAdmin.getChildren().removeAll();
+                vBoxDashboardAdmin.getChildren().setAll(fxml);
+        }
+        else if(event.getSource() == btncommande){
+            lplStatusMini.setText("/Commande");
+            lplStatus.setText("Commande");
+            vBoxDashboardAdmin.setVisible(true);
+            pnlStatus.setBackground(new Background(new BackgroundFill(Color.rgb(234, 102, 94),CornerRadii.EMPTY,Insets.EMPTY)));
+            new BounceIn(pnlStatus).play();
+            Parent fxml = FXMLLoader.load(getClass().getResource("CommandeBack.fxml"));
+                vBoxDashboardAdmin.getChildren().removeAll();
+                vBoxDashboardAdmin.getChildren().setAll(fxml);
+        } else if(event.getSource() == btnreclamation){
+            lplStatusMini.setText("/Reclamation");
+            lplStatus.setText("Reclamation");
+            vBoxDashboardAdmin.setVisible(true);
+            pnlStatus.setBackground(new Background(new BackgroundFill(Color.rgb(234, 102, 94),CornerRadii.EMPTY,Insets.EMPTY)));
+            new Pulse(pnlStatus).play();
+            Parent fxml = FXMLLoader.load(getClass().getResource("ListReclamation.fxml"));
+                vBoxDashboardAdmin.getChildren().removeAll();
+                vBoxDashboardAdmin.getChildren().setAll(fxml);
+        }else if(event.getSource() == btnproduit){
+            lplStatusMini.setText("/Reclamation");
+            lplStatus.setText("Reclamation");
+            vBoxDashboardAdmin.setVisible(true);
+            pnlStatus.setBackground(new Background(new BackgroundFill(Color.rgb(234, 102, 94),CornerRadii.EMPTY,Insets.EMPTY)));
+            new Swing(pnlStatus).play();
+            Parent fxml = FXMLLoader.load(getClass().getResource("AddProduct.fxml"));
+                vBoxDashboardAdmin.getChildren().removeAll();
+                vBoxDashboardAdmin.getChildren().setAll(fxml);
+        }
+        
     }
 
     @FXML
@@ -135,6 +254,8 @@ public class DashboardAdminController implements Initializable {
                            new Pulse(root).play();
 
     }
+
+    
 
     
     
