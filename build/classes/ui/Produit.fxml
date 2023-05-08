@@ -18,8 +18,8 @@
             <TableColumn fx:id="actionsCol" minWidth="0.0" prefWidth="181.5999755859375" text="Action" />
             </columns>
         </TableView>
-      <FontAwesomeIconView fill="#fca5a5" glyphName="SEARCH" layoutX="22.0" layoutY="44.0" size="25" />
-      <TextField fx:id="tfSearch" layoutX="62.0" layoutY="14.0" prefHeight="44.0" prefWidth="650.0" style="-fx-border-radius: 20px; -fx-border-width: 2px; -fx-background-color: white; -fx-border-color: #fca5a5;" />
+      <FontAwesomeIconView fill="#c39f6d" glyphName="SEARCH" layoutX="22.0" layoutY="44.0" size="25" />
+      <TextField fx:id="tfSearch" layoutX="62.0" layoutY="14.0" prefHeight="44.0" prefWidth="650.0" style="-fx-border-radius: 20px; -fx-border-width: 2px; -fx-background-color: white; -fx-border-color: #c39f6d;" />
     </children>
 
 </AnchorPane>

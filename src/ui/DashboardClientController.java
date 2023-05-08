@@ -89,7 +89,7 @@ public class DashboardClientController implements Initializable {
             lplStatusMini.setText("/Home/Profil");
             lplStatus.setText("Profil Settings");
             vBoxDashboardClient.setVisible(true);
-            pnlStatusClient.setBackground(new Background(new BackgroundFill(Color.rgb(227, 115, 131),CornerRadii.EMPTY,Insets.EMPTY)));
+            pnlStatusClient.setBackground(new Background(new BackgroundFill(Color.rgb(201, 179, 150),CornerRadii.EMPTY,Insets.EMPTY)));
             new Swing(pnlStatusClient).play();
             Parent fxml = FXMLLoader.load(getClass().getResource("Profil.fxml"));
                 vBoxDashboardClient.getChildren().removeAll();
@@ -97,7 +97,7 @@ public class DashboardClientController implements Initializable {
         }else if(event.getSource() == btnHomeClient){
             lplStatusMini.setText("/Home");
             lplStatus.setText("HOME");
-            pnlStatusClient.setBackground(new Background(new BackgroundFill(Color.rgb(252,165,165),CornerRadii.EMPTY,Insets.EMPTY)));
+            pnlStatusClient.setBackground(new Background(new BackgroundFill(Color.rgb(174, 127, 66),CornerRadii.EMPTY,Insets.EMPTY)));
             new Pulse(pnlStatusClient).play();
             vBoxDashboardClient.getChildren().removeAll();
             vBoxDashboardClient.setVisible(false);
@@ -105,7 +105,7 @@ public class DashboardClientController implements Initializable {
            lplStatusMini.setText("/Home/Event");
             lplStatus.setText("Evenements");
             vBoxDashboardClient.setVisible(true);
-            pnlStatusClient.setBackground(new Background(new BackgroundFill(Color.rgb(227, 115, 131),CornerRadii.EMPTY,Insets.EMPTY)));
+            pnlStatusClient.setBackground(new Background(new BackgroundFill(Color.rgb(201, 179, 150),CornerRadii.EMPTY,Insets.EMPTY)));
             new Swing(pnlStatusClient).play();
             Parent fxml = FXMLLoader.load(getClass().getResource("afficherEvenement.fxml"));
                 vBoxDashboardClient.getChildren().removeAll();
@@ -123,8 +123,8 @@ public class DashboardClientController implements Initializable {
             lplStatusMini.setText("/Home/Services");
             lplStatus.setText("List Services");
             vBoxDashboardClient.setVisible(true);
-            pnlStatusClient.setBackground(new Background(new BackgroundFill(Color.rgb(234, 102, 94),CornerRadii.EMPTY,Insets.EMPTY)));
-            new BounceIn(pnlStatusClient).play();
+            pnlStatusClient.setBackground(new Background(new BackgroundFill(Color.rgb(197, 168, 131),CornerRadii.EMPTY,Insets.EMPTY)));
+            new Shake(pnlStatusClient).play();
             Parent fxml = FXMLLoader.load(getClass().getResource("ServiceFront.fxml"));
                 vBoxDashboardClient.getChildren().removeAll();
                 vBoxDashboardClient.getChildren().setAll(fxml);
@@ -132,7 +132,7 @@ public class DashboardClientController implements Initializable {
             lplStatusMini.setText("/Home/List Reservations");
             lplStatus.setText("Reservations");
             vBoxDashboardClient.setVisible(true);
-            pnlStatusClient.setBackground(new Background(new BackgroundFill(Color.rgb(234, 102, 94),CornerRadii.EMPTY,Insets.EMPTY)));
+            pnlStatusClient.setBackground(new Background(new BackgroundFill(Color.rgb(211, 174, 132),CornerRadii.EMPTY,Insets.EMPTY)));
             new BounceIn(pnlStatusClient).play();
             Parent fxml = FXMLLoader.load(getClass().getResource("AfficheReservations.fxml"));
                 vBoxDashboardClient.getChildren().removeAll();
@@ -141,8 +141,8 @@ public class DashboardClientController implements Initializable {
             lplStatusMini.setText("/Home/Reclamations");
             lplStatus.setText("Add Reclamation");
             vBoxDashboardClient.setVisible(true);
-            pnlStatusClient.setBackground(new Background(new BackgroundFill(Color.rgb(234, 102, 94),CornerRadii.EMPTY,Insets.EMPTY)));
-            new BounceIn(pnlStatusClient).play();
+            pnlStatusClient.setBackground(new Background(new BackgroundFill(Color.rgb(197, 168, 131),CornerRadii.EMPTY,Insets.EMPTY)));
+            new Shake(pnlStatusClient).play();
             Parent fxml = FXMLLoader.load(getClass().getResource("AddReclamation.fxml"));
                 vBoxDashboardClient.getChildren().removeAll();
                 vBoxDashboardClient.getChildren().setAll(fxml);
@@ -150,7 +150,7 @@ public class DashboardClientController implements Initializable {
             lplStatusMini.setText("/Home/Reclamations");
             lplStatus.setText("List Reclamation");
             vBoxDashboardClient.setVisible(true);
-            pnlStatusClient.setBackground(new Background(new BackgroundFill(Color.rgb(234, 102, 94),CornerRadii.EMPTY,Insets.EMPTY)));
+            pnlStatusClient.setBackground(new Background(new BackgroundFill(Color.rgb(201, 179, 150),CornerRadii.EMPTY,Insets.EMPTY)));
             new BounceIn(pnlStatusClient).play();
             Parent fxml = FXMLLoader.load(getClass().getResource("ListFrontReclamation.fxml"));
                 vBoxDashboardClient.getChildren().removeAll();
@@ -159,7 +159,7 @@ public class DashboardClientController implements Initializable {
            lplStatusMini.setText("/Home/Products");
             lplStatus.setText("Products");
             vBoxDashboardClient.setVisible(true);
-            pnlStatusClient.setBackground(new Background(new BackgroundFill(Color.rgb(227, 115, 131),CornerRadii.EMPTY,Insets.EMPTY)));
+            pnlStatusClient.setBackground(new Background(new BackgroundFill(Color.rgb(201, 179, 150),CornerRadii.EMPTY,Insets.EMPTY)));
             new Swing(pnlStatusClient).play();
             Parent fxml = FXMLLoader.load(getClass().getResource("Commande.fxml"));
                 vBoxDashboardClient.getChildren().removeAll();
@@ -168,7 +168,7 @@ public class DashboardClientController implements Initializable {
            lplStatusMini.setText("/Home/Commande");
             lplStatus.setText("Commande");
             vBoxDashboardClient.setVisible(true);
-            pnlStatusClient.setBackground(new Background(new BackgroundFill(Color.rgb(227, 115, 131),CornerRadii.EMPTY,Insets.EMPTY)));
+            pnlStatusClient.setBackground(new Background(new BackgroundFill(Color.rgb(197, 168, 131),CornerRadii.EMPTY,Insets.EMPTY)));
             new Swing(pnlStatusClient).play();
             Parent fxml = FXMLLoader.load(getClass().getResource("Details.fxml"));
                 vBoxDashboardClient.getChildren().removeAll();
@@ -177,8 +177,8 @@ public class DashboardClientController implements Initializable {
            lplStatusMini.setText("/Facture");
             lplStatus.setText("Facture");
             vBoxDashboardClient.setVisible(true);
-            pnlStatusClient.setBackground(new Background(new BackgroundFill(Color.rgb(227, 115, 131),CornerRadii.EMPTY,Insets.EMPTY)));
-            new Swing(pnlStatusClient).play();
+            pnlStatusClient.setBackground(new Background(new BackgroundFill(Color.rgb(197, 168, 131),CornerRadii.EMPTY,Insets.EMPTY)));
+            new Shake(pnlStatusClient).play();
             Parent fxml = FXMLLoader.load(getClass().getResource("facture.fxml"));
                 vBoxDashboardClient.getChildren().removeAll();
                 vBoxDashboardClient.getChildren().setAll(fxml);
@@ -186,7 +186,7 @@ public class DashboardClientController implements Initializable {
            lplStatusMini.setText("/Participation");
             lplStatus.setText("Participation");
             vBoxDashboardClient.setVisible(true);
-            pnlStatusClient.setBackground(new Background(new BackgroundFill(Color.rgb(227, 115, 131),CornerRadii.EMPTY,Insets.EMPTY)));
+            pnlStatusClient.setBackground(new Background(new BackgroundFill(Color.rgb(174, 127, 66),CornerRadii.EMPTY,Insets.EMPTY)));
             new Swing(pnlStatusClient).play();
             Parent fxml = FXMLLoader.load(getClass().getResource("AfficheParticipation.fxml"));
                 vBoxDashboardClient.getChildren().removeAll();

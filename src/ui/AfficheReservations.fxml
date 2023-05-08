@@ -47,29 +47,29 @@
                         </TableView>
                         <HBox alignment="CENTER_LEFT" prefHeight="71.0" prefWidth="1192.0">
                            <children>
-                              <FontAwesomeIconView fill="#fca5a5" glyphName="SEARCH" size="25">
+                              <FontAwesomeIconView fill="#c39f6d" glyphName="SEARCH" size="25">
                                  <HBox.margin>
                                     <Insets left="10.0" />
                                  </HBox.margin>
                               </FontAwesomeIconView>
-                              <TextField fx:id="filterField" onMouseClicked="#search_service" prefHeight="44.0" prefWidth="380.0" style="-fx-border-radius: 20px; -fx-border-width: 2px; -fx-background-color: white; -fx-border-color: #fca5a5;">
+                              <TextField fx:id="filterField" onMouseClicked="#search_service" prefHeight="44.0" prefWidth="380.0" style="-fx-border-radius: 20px; -fx-border-width: 2px; -fx-background-color: white; -fx-border-color: #c39f6d;">
                                  <HBox.margin>
                                     <Insets left="20.0" right="170.0" />
                                  </HBox.margin>
                               </TextField>
-                              <ComboBox fx:id="txtTri" prefHeight="30.0" prefWidth="255.0" promptText="Order By:" style="-fx-border-color: #fca5a5;" styleClass="trans-btn-white-border">
+                              <ComboBox fx:id="txtTri" prefHeight="30.0" prefWidth="255.0" promptText="Order By:" style="-fx-border-color: #c39f6d;" styleClass="trans-btn-white-border">
                                  <HBox.margin>
                                     <Insets left="30.0" />
                                  </HBox.margin>
                               </ComboBox>
                               <Label prefHeight="21.0" prefWidth="81.0" />
-                              <Button fx:id="btnExcel" mnemonicParsing="false" onAction="#excelfile" prefHeight="31.0" prefWidth="71.0" style="-fx-background-color: #fca5a5;" text="Excel" textFill="WHITE">
+                              <Button fx:id="btnExcel" mnemonicParsing="false" onAction="#excelfile" prefHeight="31.0" prefWidth="71.0" style="-fx-background-color: #c39f6d;" text="Excel" textFill="WHITE">
                                  <font>
                                     <Font name="System Bold" size="17.0" />
                                  </font>
                               </Button>
                               <Label prefHeight="21.0" prefWidth="16.0" />
-                              <Button fx:id="btnPDF" mnemonicParsing="false" onAction="#PDFGeneration" prefHeight="38.0" prefWidth="72.0" style="-fx-background-color: #fca5a5;" text="PDF" textFill="WHITE">
+                              <Button fx:id="btnPDF" mnemonicParsing="false" onAction="#PDFGeneration" prefHeight="38.0" prefWidth="72.0" style="-fx-background-color: #c39f6d;" text="PDF" textFill="WHITE">
                                  <font>
                                     <Font name="System Bold" size="17.0" />
                                  </font>

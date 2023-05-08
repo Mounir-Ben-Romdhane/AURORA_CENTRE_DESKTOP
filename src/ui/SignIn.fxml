@@ -13,7 +13,7 @@
 
 <VBox id="VBox" fx:id="VBox" alignment="CENTER_LEFT" prefHeight="550.0" prefWidth="480.0" styleClass="white-pane-signIn" stylesheets="@styleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.SignInController">
    <children>
-      <Label prefHeight="35.0" prefWidth="99.0" text="Sign In" textFill="#f78c7b">
+      <Label prefHeight="35.0" prefWidth="99.0" text="Sign In" textFill="#c39f6d">
          <font>
             <Font name="System Bold Italic" size="20.0" />
          </font>
@@ -67,7 +67,7 @@
             <Insets left="50.0" top="10.0" />
          </VBox.margin>
       </Label>
-      <CheckBox fx:id="remember" mnemonicParsing="false" prefHeight="18.0" prefWidth="122.0" text="Remember Me" textFill="#f78c7b">
+      <CheckBox fx:id="remember" mnemonicParsing="false" prefHeight="18.0" prefWidth="122.0" text="Remember Me" textFill="#c39f6d">
          <VBox.margin>
             <Insets left="60.0" top="15.0" />
          </VBox.margin>

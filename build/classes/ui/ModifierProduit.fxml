@@ -11,12 +11,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="ui.ModifierProduitController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.ModifierProduitController">
    <children>
       <VBox layoutX="20.0" layoutY="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="1203.0">
          <children>
-            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="75.0" prefWidth="1203.0" text="Modifier Produit" textFill="#d46d6d">
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="75.0" prefWidth="1203.0" text="Modifier Produit" textFill="#c39f6d">
                <font>
                   <Font size="43.0" />
                </font>
@@ -50,7 +49,7 @@
                   <HBox layoutX="625.0" layoutY="87.0" prefHeight="50.0" prefWidth="500.0" />
                   <HBox layoutX="506.0" layoutY="295.0" prefHeight="50.0" prefWidth="500.0">
                      <children>
-                        <Button fx:id="btnModifierS" mnemonicParsing="false" onMouseClicked="#modifier" prefHeight="51.0" prefWidth="140.0" style="-fx-background-color: #d46d6d;" styleClass="pink1-btn" text="Modifier" textFill="WHITE">
+                        <Button fx:id="btnModifierS" mnemonicParsing="false" onMouseClicked="#modifier" prefHeight="51.0" prefWidth="140.0" style="-fx-background-color: #c39f6d;" styleClass="pink1-btn" text="Modifier" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="24.0" />
                            </font>

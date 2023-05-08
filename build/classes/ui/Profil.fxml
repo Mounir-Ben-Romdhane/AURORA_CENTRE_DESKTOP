@@ -72,28 +72,28 @@
                   </ImageView>
                </children>
             </HBox>
-            <Label fx:id="hello" alignment="CENTER" contentDisplay="CENTER" layoutX="411.0" layoutY="14.0" prefHeight="64.0" prefWidth="159.0" text="PROFIL details" textFill="#d46d6d">
+            <Label fx:id="hello" alignment="CENTER" contentDisplay="CENTER" layoutX="411.0" layoutY="14.0" prefHeight="64.0" prefWidth="159.0" text="PROFIL details" textFill="#c39f6d">
                <font>
                   <Font name="System Bold Italic" size="18.0" />
                </font>
             </Label>
-            <Label fx:id="hello1" alignment="CENTER" contentDisplay="CENTER" layoutX="491.0" layoutY="62.0" prefHeight="64.0" prefWidth="74.0" text="Full Name :" textFill="#d46d6d">
+            <Label fx:id="hello1" alignment="CENTER" contentDisplay="CENTER" layoutX="491.0" layoutY="62.0" prefHeight="64.0" prefWidth="74.0" text="Full Name :" textFill="#c39f6d">
                <font>
                   <Font name="System Italic" size="13.0" />
                </font>
             </Label>
-            <Label fx:id="hello11" alignment="CENTER" contentDisplay="CENTER" layoutX="484.0" layoutY="132.0" prefHeight="64.0" prefWidth="74.0" text="Address :" textFill="#d46d6d" />
-            <Label fx:id="hello2" alignment="CENTER" contentDisplay="CENTER" layoutX="25.0" layoutY="170.0" prefHeight="64.0" prefWidth="159.0" text="Contact info" textFill="#d46d6d">
+            <Label fx:id="hello11" alignment="CENTER" contentDisplay="CENTER" layoutX="484.0" layoutY="132.0" prefHeight="64.0" prefWidth="74.0" text="Address :" textFill="#c39f6d" />
+            <Label fx:id="hello2" alignment="CENTER" contentDisplay="CENTER" layoutX="25.0" layoutY="170.0" prefHeight="64.0" prefWidth="159.0" text="Contact info" textFill="#c39f6d">
                <font>
                   <Font name="System Bold Italic" size="18.0" />
                </font>
             </Label>
-            <Label fx:id="hello111" alignment="CENTER" contentDisplay="CENTER" layoutX="108.0" layoutY="224.0" prefHeight="64.0" prefWidth="74.0" text="Phone :" textFill="#d46d6d">
+            <Label fx:id="hello111" alignment="CENTER" contentDisplay="CENTER" layoutX="108.0" layoutY="224.0" prefHeight="64.0" prefWidth="74.0" text="Phone :" textFill="#c39f6d">
                <font>
                   <Font name="System Italic" size="14.0" />
                </font>
             </Label>
-            <Label fx:id="hello1111" alignment="CENTER" contentDisplay="CENTER" layoutX="108.0" layoutY="288.0" prefHeight="64.0" prefWidth="74.0" text="Email :" textFill="#d46d6d">
+            <Label fx:id="hello1111" alignment="CENTER" contentDisplay="CENTER" layoutX="108.0" layoutY="288.0" prefHeight="64.0" prefWidth="74.0" text="Email :" textFill="#c39f6d">
                <font>
                   <Font size="14.0" />
                </font>
@@ -107,17 +107,17 @@
             <Label fx:id="lbFullAddresseProfil" layoutX="614.0" layoutY="181.0" opacity="0.7" prefHeight="23.0" prefWidth="473.0" />
             <Label fx:id="lbNumTelProfil" layoutX="230.0" layoutY="279.0" opacity="0.7" prefHeight="23.0" prefWidth="411.0" />
             <Label fx:id="lbEmailProfil" layoutX="230.0" layoutY="347.0" opacity="0.7" prefHeight="23.0" prefWidth="460.0" />
-            <Label fx:id="hello21" alignment="CENTER" contentDisplay="CENTER" layoutX="42.0" layoutY="338.0" prefHeight="64.0" prefWidth="159.0" text="Change Password" textFill="#d46d6d">
+            <Label fx:id="hello21" alignment="CENTER" contentDisplay="CENTER" layoutX="42.0" layoutY="338.0" prefHeight="64.0" prefWidth="159.0" text="Change Password" textFill="#c39f6d">
                <font>
                   <Font name="System Bold Italic" size="18.0" />
                </font>
             </Label>
-            <Label fx:id="hello1112" alignment="CENTER" contentDisplay="CENTER" layoutX="105.0" layoutY="380.0" prefHeight="64.0" prefWidth="74.0" text="Password :" textFill="#d46d6d">
+            <Label fx:id="hello1112" alignment="CENTER" contentDisplay="CENTER" layoutX="105.0" layoutY="380.0" prefHeight="64.0" prefWidth="74.0" text="Password :" textFill="#c39f6d">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <Label fx:id="hello11111" alignment="CENTER" contentDisplay="CENTER" layoutX="104.0" layoutY="452.0" prefHeight="64.0" prefWidth="136.0" text="Confirme Password :" textFill="#d46d6d">
+            <Label fx:id="hello11111" alignment="CENTER" contentDisplay="CENTER" layoutX="104.0" layoutY="452.0" prefHeight="64.0" prefWidth="136.0" text="Confirme Password :" textFill="#c39f6d">
                <font>
                   <Font size="14.0" />
                </font>
