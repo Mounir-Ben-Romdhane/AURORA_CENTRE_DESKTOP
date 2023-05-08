@@ -14,7 +14,7 @@
         <columns>
             <TableColumn fx:id="datefac" prefWidth="348.0" text="Date of order" />
             <TableColumn fx:id="estsup" prefWidth="356.0" text="est_sup" />
-          <TableColumn fx:id="commandefac" prefWidth="386.0" text="Order_id" />
+          <TableColumn fx:id="commandefac" prefWidth="470.4000122070313" text="Order_id" />
         </columns>
       </TableView>
    </children>

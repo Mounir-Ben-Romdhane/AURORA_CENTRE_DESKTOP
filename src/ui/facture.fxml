@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane id="AnchorPane" prefHeight="582.0" prefWidth="1347.0" style="-fx-background-color: #efd6d2;" stylesheets="@styleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.FactureController">
+<AnchorPane id="AnchorPane" prefHeight="538.0" prefWidth="1203.0" style="-fx-background-color: #efd6d2;" stylesheets="@styleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.FactureController">
    <children>
       <ScrollPane layoutY="6.0" prefHeight="586.0" prefWidth="1245.0" style="-fx-background-color: #FFE4B5;">
          <content>

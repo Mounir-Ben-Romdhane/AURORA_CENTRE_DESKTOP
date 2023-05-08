@@ -14,7 +14,7 @@
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="1203.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.AjouterServiceController">
    <children>
-      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="75.0" prefWidth="1203.0" text="Add Service" textFill="#d46d6d">
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="75.0" prefWidth="1203.0" text="Add Service" textFill="#c39f6d">
          <font>
             <Font size="43.0" />
          </font>

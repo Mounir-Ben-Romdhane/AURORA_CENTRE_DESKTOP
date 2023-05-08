@@ -9,9 +9,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="850.0" prefWidth="1539.0" style="-fx-background-color: #efd6d2;" stylesheets="@styleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.DashboardClientController">
+<AnchorPane id="AnchorPane" prefHeight="850.0" prefWidth="1539.0" style="-fx-background-color: #d2b998;" stylesheets="@styleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.DashboardClientController">
    <children>
-      <VBox prefHeight="600.0" prefWidth="294.0" style="-fx-background-color: #f78c7b;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <VBox prefHeight="600.0" prefWidth="294.0" style="-fx-background-color: #c39f6d;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <Pane prefHeight="134.0" prefWidth="294.0" style="-fx-background-color: #d46d6d;" styleClass="pane">
                <children>
@@ -163,7 +163,7 @@
             </Button>
          </children>
       </VBox>
-      <Pane fx:id="pnlStatusClient" layoutX="294.0" layoutY="134.0" prefHeight="134.0" prefWidth="1245.0" style="-fx-background-color: #fca5a5;" AnchorPane.bottomAnchor="582.0" AnchorPane.leftAnchor="294.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="134.0">
+      <Pane fx:id="pnlStatusClient" layoutX="294.0" layoutY="134.0" prefHeight="134.0" prefWidth="1245.0" style="-fx-background-color: #ae7f42;" AnchorPane.bottomAnchor="582.0" AnchorPane.leftAnchor="294.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="134.0">
          <children>
             <Label fx:id="lplStatus" layoutX="21.0" layoutY="41.0" prefHeight="66.0" prefWidth="368.0" text="HOME" textFill="WHITE">
                <font>
@@ -178,12 +178,12 @@
          </children>
       </Pane>
       <VBox fx:id="vBoxDashboardClient" layoutX="314.0" layoutY="291.0" prefHeight="538.0" prefWidth="1203.0" styleClass="white-pane" />
-      <Label layoutX="314.0" layoutY="29.0" prefHeight="48.0" prefWidth="302.0" text="Hello Client" textFill="#d46d6d">
+      <Label layoutX="314.0" layoutY="29.0" prefHeight="48.0" prefWidth="302.0" text="Hello Client" textFill="#ae7f42">
          <font>
             <Font size="40.0" />
          </font>
       </Label>
-      <Label layoutX="349.0" layoutY="60.0" prefHeight="54.0" prefWidth="568.0" text="Consult our site with simplicity" textFill="#d46d6d">
+      <Label layoutX="349.0" layoutY="60.0" prefHeight="54.0" prefWidth="568.0" text="Consult our site with simplicity" textFill="#ae7f42">
          <font>
             <Font size="16.0" />
          </font>

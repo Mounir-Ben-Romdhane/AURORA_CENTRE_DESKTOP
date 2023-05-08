@@ -41,12 +41,12 @@
             </TableView>
             <HBox alignment="CENTER_LEFT" prefHeight="54.0" prefWidth="900.0">
                <children>
-                  <FontAwesomeIconView fill="#fca5a5" glyphName="SEARCH" size="25">
+                  <FontAwesomeIconView fill="#c39f6d" glyphName="SEARCH" size="25">
                      <HBox.margin>
                         <Insets left="10.0" />
                      </HBox.margin>
                   </FontAwesomeIconView>
-                  <TextField fx:id="tfSearch" prefHeight="44.0" prefWidth="650.0" style="-fx-border-radius: 20px; -fx-border-width: 2px; -fx-background-color: white; -fx-border-color: #fca5a5;">
+                  <TextField fx:id="tfSearch" prefHeight="44.0" prefWidth="650.0" style="-fx-border-radius: 20px; -fx-border-width: 2px; -fx-background-color: white; -fx-border-color: #c39f6d;">
                      <HBox.margin>
                         <Insets left="20.0" right="170.0" />
                      </HBox.margin>
@@ -70,7 +70,7 @@
                         <Insets left="10.0" />
                      </HBox.margin>
                   </Button>
-                  <ComboBox fx:id="comboBox" onAction="#Select" prefHeight="30.0" prefWidth="255.0" promptText="Trier par :" style="-fx-border-color: #fca5a5;" styleClass="trans-btn-white-border">
+                  <ComboBox fx:id="comboBox" onAction="#Select" prefHeight="30.0" prefWidth="255.0" promptText="Trier par :" style="-fx-border-color: #c39f6d;" styleClass="trans-btn-white-border">
                      <HBox.margin>
                         <Insets left="10.0" right="20.0" />
                      </HBox.margin></ComboBox>

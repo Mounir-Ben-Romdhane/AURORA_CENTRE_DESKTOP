@@ -17,7 +17,7 @@
    <children>
       <VBox layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="1203.0">
          <children>
-            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="75.0" prefWidth="1203.0" text="Modify Service" textFill="#d46d6d">
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="75.0" prefWidth="1203.0" stylesheets="@styleSheet.css" text="Modify Service" textFill="#c39f6d">
                <font>
                   <Font size="43.0" />
                </font>
@@ -59,7 +59,7 @@
                   </HBox>
                   <HBox layoutX="506.0" layoutY="295.0" prefHeight="50.0" prefWidth="500.0">
                      <children>
-                        <Button fx:id="btnModifierS" mnemonicParsing="false" onAction="#btnMod" prefHeight="51.0" prefWidth="140.0" style="-fx-background-color: #d46d6d;" styleClass="pink1-btn" text="Modify" textFill="WHITE">
+                        <Button fx:id="btnModifierS" mnemonicParsing="false" onAction="#btnMod" prefHeight="51.0" prefWidth="140.0" style="-fx-background-color: #c39f6d;" styleClass="pink1-btn" text="Modify" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="24.0" />
                            </font>

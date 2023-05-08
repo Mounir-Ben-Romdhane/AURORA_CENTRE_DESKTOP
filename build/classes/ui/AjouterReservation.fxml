@@ -15,7 +15,7 @@
    <children>
       <VBox layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="1203.0">
          <children>
-            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="75.0" prefWidth="1203.0" text="Add Reservation" textFill="#d46d6d">
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="75.0" prefWidth="1203.0" text="Add Reservation" textFill="#c39f6d">
                <font>
                   <Font size="39.0" />
                </font>

@@ -5,22 +5,25 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.control.TextField?>
 
-<VBox prefHeight="538.0" prefWidth="1203.0" styleClass="white-pane" stylesheets="@styleSheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.ListFrontReclamationController">
+<VBox prefHeight="538.0" prefWidth="1203.0" styleClass="white-pane" stylesheets="@styleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.ListFrontReclamationController">
    <children>
       <HBox alignment="CENTER_LEFT" prefHeight="68.0" prefWidth="1203.0">
          <children>
-            <FontAwesomeIconView fill="#fca5a5" glyphName="SEARCH" size="25" />
-            <TextField fx:id="txtsearch" prefHeight="44.0" prefWidth="650.0" style="-fx-border-radius: 20px; -fx-border-width: 2px; -fx-background-color: white; -fx-border-color: #fca5a5;">
+            <FontAwesomeIconView fill="#c39f6d" glyphName="SEARCH" size="25">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin></FontAwesomeIconView>
+            <TextField fx:id="txtsearch" prefHeight="44.0" prefWidth="650.0" style="-fx-border-radius: 20px; -fx-border-width: 2px; -fx-background-color: white; -fx-border-color: #c39f6d;">
                      <HBox.margin>
                         <Insets left="20.0" right="170.0" />
                      </HBox.margin>
                   </TextField>
             
-            <ComboBox fx:id="txtTri" prefHeight="31.0" prefWidth="260.0" promptText="Trier par :" style="-fx-border-color: #fca5a5;" />
+            <ComboBox fx:id="txtTri" prefHeight="31.0" prefWidth="260.0" promptText="Trier par :" style="-fx-border-color: #c39f6d;" styleClass="trans-btn-white-border" stylesheets="@styleSheet.css" />
          </children>
       </HBox>
       <TableView fx:id="tableViewReclamation" prefHeight="470.0" prefWidth="1203.0" stylesheets="@styleSheet.css">

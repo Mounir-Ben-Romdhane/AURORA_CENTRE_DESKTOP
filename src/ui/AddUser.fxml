@@ -14,7 +14,7 @@
 
 <VBox id="VBox" fx:id="VBoxAddUser" prefHeight="538.0" prefWidth="1203.0" styleClass="white-pane" stylesheets="@styleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.AddUserController">
    <children>
-      <Label fx:id="hello" alignment="CENTER" contentDisplay="CENTER" layoutX="362.0" prefHeight="58.0" prefWidth="1203.0" text="Add User" textFill="#d46d6d">
+      <Label fx:id="hello" alignment="CENTER" contentDisplay="CENTER" layoutX="362.0" prefHeight="58.0" prefWidth="1203.0" text="Add User" textFill="#c39f6d">
          <font>
             <Font size="43.0" />
          </font>

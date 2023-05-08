@@ -14,7 +14,6 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 
-
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.DetailController">
    <children>
       <GridPane layoutX="317.0" layoutY="336.0" prefHeight="342.0" prefWidth="606.0" stylesheets="@styleSheet.css">
@@ -48,12 +47,12 @@
                         <Insets left="5.0" right="5.0" />
                      </HBox.margin>
                   </ImageView>
-                  <TextField prefHeight="26.0" prefWidth="248.0" style="-fx-border-color: #fca5a5;">
+                  <TextField prefHeight="26.0" prefWidth="248.0" style="-fx-border-color: #c39f6d;">
                      <HBox.margin>
                         <Insets right="10.0" />
                      </HBox.margin>
                   </TextField>
-                  <ComboBox prefHeight="28.0" prefWidth="138.0" style="-fx-border-color: #fca5a5;" styleClass="trans-btn-white-border" />
+                  <ComboBox prefHeight="28.0" prefWidth="138.0" style="-fx-border-color: #c39f6d;" styleClass="trans-btn-white-border" />
                   <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="172.0" styleClass="pink-btn" text="Add User">
                      <HBox.margin>
                         <Insets left="10.0" />

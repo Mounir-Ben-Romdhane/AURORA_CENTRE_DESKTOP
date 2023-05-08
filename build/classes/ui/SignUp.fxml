@@ -12,7 +12,7 @@
 
 <VBox id="VBox" alignment="CENTER_LEFT" prefHeight="550.0" prefWidth="480.0" styleClass="white-pane-signUp" stylesheets="@styleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.SignUpController">
    <children>
-      <Label text="Sign Up" textFill="#f78c7b">
+      <Label text="Sign Up" textFill="#c39f6d">
          <font>
             <Font name="System Bold Italic" size="20.0" />
          </font>

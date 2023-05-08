@@ -23,7 +23,7 @@
             <VBox prefHeight="200.0" prefWidth="435.0" styleClass="right-bar" stylesheets="@../values/style.css" BorderPane.alignment="CENTER">
                <children>
                   <Pane prefHeight="57.0" prefWidth="435.0" VBox.vgrow="ALWAYS" />
-                  <VBox fx:id="chosenFruitCard" alignment="CENTER" prefHeight="629.0" prefWidth="335.0" style="-fx-background-color: #f78c7b;" stylesheets="@../values/style.css">
+                  <VBox fx:id="chosenFruitCard" alignment="CENTER" prefHeight="629.0" prefWidth="335.0" style="-fx-background-color: #c39f6d;" stylesheets="@../values/style.css">
                      <VBox.margin>
                         <Insets bottom="15.0" left="50.0" right="50.0" top="15.0" />
                      </VBox.margin>
@@ -71,7 +71,7 @@
                               </Label>
                            </children>
                         </HBox>
-                        <Button fx:id="btnReserver" mnemonicParsing="false" onAction="#handleClick" prefHeight="50.0" prefWidth="270.0" style="-fx-background-color: #efd6d2;" styleClass="add-btn" stylesheets="@../values/style.css" text="Book" textFill="#828282">
+                        <Button fx:id="btnReserver" mnemonicParsing="false" onAction="#handleClick" prefHeight="50.0" prefWidth="270.0" style="-fx-background-color: #7b6243;" styleClass="add-btn" stylesheets="@../values/style.css" text="Book" textFill="#ecdcc8">
                            <VBox.margin>
                               <Insets bottom="20.0" top="30.0" />
                            </VBox.margin>

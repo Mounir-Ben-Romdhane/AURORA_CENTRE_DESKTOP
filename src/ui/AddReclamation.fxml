@@ -14,7 +14,7 @@
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="1203.0" styleClass="white-pane" stylesheets="@styleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.AddReclamationController">
    <children>
-      <Label alignment="CENTER" contentDisplay="TOP" prefHeight="21.0" prefWidth="1210.0" text="Send a claim" textFill="#d46d6d">
+      <Label alignment="CENTER" contentDisplay="TOP" prefHeight="21.0" prefWidth="1210.0" text="Send a claim" textFill="#c39f6d">
          <VBox.margin>
             <Insets top="10.0" />
          </VBox.margin>
@@ -47,7 +47,7 @@
                      </children>
                   </HBox>
                </children></HBox>
-            <ComboBox fx:id="comboBox" layoutX="72.0" layoutY="200.0" prefHeight="30.0" prefWidth="372.0" promptText="Type of claim" style="-fx-border-color: #fca5a5;" styleClass="trans-btn-white-border">
+            <ComboBox fx:id="comboBox" layoutX="72.0" layoutY="200.0" prefHeight="30.0" prefWidth="372.0" promptText="Type of claim" style="-fx-border-color: #c39f6d;" styleClass="trans-btn-white-border">
                      <HBox.margin>
                         <Insets left="10.0" right="20.0" />
                      </HBox.margin></ComboBox>

@@ -12,7 +12,7 @@
 
 <VBox id="VBox" fx:id="ForgetPass" alignment="CENTER_LEFT" prefHeight="550.0" prefWidth="480.0" styleClass="white-pane-forget" stylesheets="@styleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.ForgetPassController">
    <children>
-      <Label text="Forget Password" textFill="#f78c7b">
+      <Label text="Forget Password" textFill="#c39f6d">
          <font>
             <Font name="System Bold Italic" size="20.0" />
          </font>

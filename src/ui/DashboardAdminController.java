@@ -101,7 +101,7 @@ public class DashboardAdminController implements Initializable {
         if(event.getSource() == btnAddUser){
             lplStatusMini.setText("/Home/Users");
             lplStatus.setText("USERS");
-            pnlStatus.setBackground(new Background(new BackgroundFill(Color.rgb(250, 128, 114),CornerRadii.EMPTY,Insets.EMPTY)));
+            pnlStatus.setBackground(new Background(new BackgroundFill(Color.rgb(197, 168, 131),CornerRadii.EMPTY,Insets.EMPTY)));
             vBoxDashboardAdmin.setVisible(true);
             new Shake(pnlStatus).play();
             Parent fxml = FXMLLoader.load(getClass().getResource("AddUser.fxml"));
@@ -111,7 +111,7 @@ public class DashboardAdminController implements Initializable {
             lplStatusMini.setText("/Home/List Users");
             lplStatus.setText("List Users");
             vBoxDashboardAdmin.setVisible(true);
-            pnlStatus.setBackground(new Background(new BackgroundFill(Color.rgb(234, 102, 94),CornerRadii.EMPTY,Insets.EMPTY)));
+            pnlStatus.setBackground(new Background(new BackgroundFill(Color.rgb(201, 179, 150),CornerRadii.EMPTY,Insets.EMPTY)));
             new BounceIn(pnlStatus).play();
             Parent fxml = FXMLLoader.load(getClass().getResource("afficheUsers.fxml"));
                 vBoxDashboardAdmin.getChildren().removeAll();
@@ -120,7 +120,7 @@ public class DashboardAdminController implements Initializable {
             lplStatusMini.setText("/Home/Profil");
             lplStatus.setText("Profil Settings");
             vBoxDashboardAdmin.setVisible(true);
-            pnlStatus.setBackground(new Background(new BackgroundFill(Color.rgb(227, 115, 131),CornerRadii.EMPTY,Insets.EMPTY)));
+            pnlStatus.setBackground(new Background(new BackgroundFill(Color.rgb(197, 168, 131),CornerRadii.EMPTY,Insets.EMPTY)));
             new Swing(pnlStatus).play();
             Parent fxml = FXMLLoader.load(getClass().getResource("Profil.fxml"));
                 vBoxDashboardAdmin.getChildren().removeAll();
@@ -128,7 +128,7 @@ public class DashboardAdminController implements Initializable {
         }else if(event.getSource() == btnHome){
             lplStatusMini.setText("/Home");
             lplStatus.setText("HOME");
-            pnlStatus.setBackground(new Background(new BackgroundFill(Color.rgb(252,165,165),CornerRadii.EMPTY,Insets.EMPTY)));
+            pnlStatus.setBackground(new Background(new BackgroundFill(Color.rgb(174, 127, 66),CornerRadii.EMPTY,Insets.EMPTY)));
             new Pulse(pnlStatus).play();
             vBoxDashboardAdmin.getChildren().removeAll();
             vBoxDashboardAdmin.setVisible(false);
@@ -136,7 +136,7 @@ public class DashboardAdminController implements Initializable {
             lplStatusMini.setText("/Home/Evenements");
             lplStatus.setText("Evenements");
             vBoxDashboardAdmin.setVisible(true);
-            pnlStatus.setBackground(new Background(new BackgroundFill(Color.rgb(234, 102, 94),CornerRadii.EMPTY,Insets.EMPTY)));
+            pnlStatus.setBackground(new Background(new BackgroundFill(Color.rgb(174, 127, 66),CornerRadii.EMPTY,Insets.EMPTY)));
             new Shake(pnlStatus).play();
             Parent fxml = FXMLLoader.load(getClass().getResource("Evenement.fxml"));
                 vBoxDashboardAdmin.getChildren().removeAll();
@@ -145,7 +145,7 @@ public class DashboardAdminController implements Initializable {
             lplStatusMini.setText("/Home/Participations");
             lplStatus.setText("List Participations");
             vBoxDashboardAdmin.setVisible(true);
-            pnlStatus.setBackground(new Background(new BackgroundFill(Color.rgb(234, 102, 94),CornerRadii.EMPTY,Insets.EMPTY)));
+            pnlStatus.setBackground(new Background(new BackgroundFill(Color.rgb(197, 168, 131),CornerRadii.EMPTY,Insets.EMPTY)));
             new BounceIn(pnlStatus).play();
             Parent fxml = FXMLLoader.load(getClass().getResource("AfficherParticipation.fxml"));
                 vBoxDashboardAdmin.getChildren().removeAll();
@@ -154,7 +154,7 @@ public class DashboardAdminController implements Initializable {
             lplStatusMini.setText("/Home/Ajouter Service");
             lplStatus.setText("Ajouter Service");
             vBoxDashboardAdmin.setVisible(true);
-            pnlStatus.setBackground(new Background(new BackgroundFill(Color.rgb(234, 102, 94),CornerRadii.EMPTY,Insets.EMPTY)));
+            pnlStatus.setBackground(new Background(new BackgroundFill(Color.rgb(211, 174, 132),CornerRadii.EMPTY,Insets.EMPTY)));
             new Swing(pnlStatus).play();
             Parent fxml = FXMLLoader.load(getClass().getResource("AjouterService.fxml"));
                 vBoxDashboardAdmin.getChildren().removeAll();
@@ -164,7 +164,7 @@ public class DashboardAdminController implements Initializable {
             lplStatusMini.setText("/Home/Liste Services");
             lplStatus.setText("Liste Services");
             vBoxDashboardAdmin.setVisible(true);
-            pnlStatus.setBackground(new Background(new BackgroundFill(Color.rgb(234, 102, 94),CornerRadii.EMPTY,Insets.EMPTY)));
+            pnlStatus.setBackground(new Background(new BackgroundFill(Color.rgb(201, 179, 150),CornerRadii.EMPTY,Insets.EMPTY)));
             new Pulse(pnlStatus).play();
             Parent fxml = FXMLLoader.load(getClass().getResource("AfficheServices.fxml"));
                 vBoxDashboardAdmin.getChildren().removeAll();
@@ -174,7 +174,7 @@ public class DashboardAdminController implements Initializable {
             lplStatusMini.setText("/Home/ Liste Réservations");
             lplStatus.setText("Liste Réservations");
             vBoxDashboardAdmin.setVisible(true);
-            pnlStatus.setBackground(new Background(new BackgroundFill(Color.rgb(234, 102, 94),CornerRadii.EMPTY,Insets.EMPTY)));
+            pnlStatus.setBackground(new Background(new BackgroundFill(Color.rgb(211, 174, 132),CornerRadii.EMPTY,Insets.EMPTY)));
             new Shake(pnlStatus).play();
             Parent fxml = FXMLLoader.load(getClass().getResource("AfficheReservations.fxml"));
                 vBoxDashboardAdmin.getChildren().removeAll();
@@ -183,7 +183,7 @@ public class DashboardAdminController implements Initializable {
             lplStatusMini.setText("/Home/Products");
             lplStatus.setText("Products");
             vBoxDashboardAdmin.setVisible(true);
-            pnlStatus.setBackground(new Background(new BackgroundFill(Color.rgb(234, 102, 94),CornerRadii.EMPTY,Insets.EMPTY)));
+            pnlStatus.setBackground(new Background(new BackgroundFill(Color.rgb(174, 127, 66),CornerRadii.EMPTY,Insets.EMPTY)));
             new BounceIn(pnlStatus).play();
             Parent fxml = FXMLLoader.load(getClass().getResource("Produit.fxml"));
                 vBoxDashboardAdmin.getChildren().removeAll();
@@ -193,7 +193,7 @@ public class DashboardAdminController implements Initializable {
             lplStatusMini.setText("/Facture");
             lplStatus.setText("Facture");
             vBoxDashboardAdmin.setVisible(true);
-            pnlStatus.setBackground(new Background(new BackgroundFill(Color.rgb(234, 102, 94),CornerRadii.EMPTY,Insets.EMPTY)));
+            pnlStatus.setBackground(new Background(new BackgroundFill(Color.rgb(211, 174, 132),CornerRadii.EMPTY,Insets.EMPTY)));
             new Swing(pnlStatus).play();
             Parent fxml = FXMLLoader.load(getClass().getResource("FactureBack.fxml"));
                 vBoxDashboardAdmin.getChildren().removeAll();
@@ -203,7 +203,7 @@ public class DashboardAdminController implements Initializable {
             lplStatusMini.setText("/Commande");
             lplStatus.setText("Commande");
             vBoxDashboardAdmin.setVisible(true);
-            pnlStatus.setBackground(new Background(new BackgroundFill(Color.rgb(234, 102, 94),CornerRadii.EMPTY,Insets.EMPTY)));
+            pnlStatus.setBackground(new Background(new BackgroundFill(Color.rgb(174, 127, 66),CornerRadii.EMPTY,Insets.EMPTY)));
             new BounceIn(pnlStatus).play();
             Parent fxml = FXMLLoader.load(getClass().getResource("CommandeBack.fxml"));
                 vBoxDashboardAdmin.getChildren().removeAll();
@@ -212,16 +212,16 @@ public class DashboardAdminController implements Initializable {
             lplStatusMini.setText("/Reclamation");
             lplStatus.setText("Reclamation");
             vBoxDashboardAdmin.setVisible(true);
-            pnlStatus.setBackground(new Background(new BackgroundFill(Color.rgb(234, 102, 94),CornerRadii.EMPTY,Insets.EMPTY)));
+            pnlStatus.setBackground(new Background(new BackgroundFill(Color.rgb(201, 179, 150),CornerRadii.EMPTY,Insets.EMPTY)));
             new Pulse(pnlStatus).play();
             Parent fxml = FXMLLoader.load(getClass().getResource("ListReclamation.fxml"));
                 vBoxDashboardAdmin.getChildren().removeAll();
                 vBoxDashboardAdmin.getChildren().setAll(fxml);
         }else if(event.getSource() == btnproduit){
-            lplStatusMini.setText("/Reclamation");
-            lplStatus.setText("Reclamation");
+            lplStatusMini.setText("/Home/Produit");
+            lplStatus.setText("Add produit");
             vBoxDashboardAdmin.setVisible(true);
-            pnlStatus.setBackground(new Background(new BackgroundFill(Color.rgb(234, 102, 94),CornerRadii.EMPTY,Insets.EMPTY)));
+            pnlStatus.setBackground(new Background(new BackgroundFill(Color.rgb(211, 174, 132),CornerRadii.EMPTY,Insets.EMPTY)));
             new Swing(pnlStatus).play();
             Parent fxml = FXMLLoader.load(getClass().getResource("AddProduct.fxml"));
                 vBoxDashboardAdmin.getChildren().removeAll();
